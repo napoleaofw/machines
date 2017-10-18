@@ -16,41 +16,41 @@
 // });
 
 Route::get('/login', function () {
-    return view('login.index');
+    return view('pages.login.index');
 });
 
 Route::get('/user/register', function () {
-    return view('user.form.index');
+    return view('pages.user.form.index');
 });
 
 Route::get('/user/list', function () {
-    return view('user.list.index');
+    return view('pages.user.list.index');
 });
 
 Route::get('/establishment/register', function () {
-    return view('establishment.form.index');
+    return view('pages.establishment.form.index');
 });
 
 Route::get('/establishment/list', function () {
-    return view('establishment.list.index');
+    return view('pages.establishment.list.index');
 });
 
 Route::get('/machine/register', function () {
-    return view('machine.form.index');
+    return view('pages.machine.form.index');
 });
 
 Route::get('/machine/list', function () {
-    return view('machine.list.index');
+    return view('pages.machine.list.index');
 });
 
 Route::get('/transaction/register', function () {
-    return view('transaction.register.index');
+    return view('pages.transaction.register.index');
 });
 
 Route::get('/transaction/list', function () {
-    return view('transaction.list.index');
+    return view('pages.transaction.list.index');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard.index');
+    return view('pages.dashboard.index');
 });
