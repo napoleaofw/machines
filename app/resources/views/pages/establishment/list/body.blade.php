@@ -4,8 +4,8 @@
     <div class="content-wrapper">
         <section class="content-header">
             <h1>
-                Dashboard
-                <small>Painel de controle</small>
+                Estabelecimentos
+                <small>Lista de estabelecimentos</small>
             </h1>
         </section>
         <section class="content">
