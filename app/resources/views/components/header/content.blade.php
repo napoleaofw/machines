@@ -11,14 +11,13 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="hidden-xs">Jesus Cristo</span>
+                            <span class="hidden-xs">Nome do usuário</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="user-header">
                                 <img src="{{ url('/vendor/adminlte/img/user-160x160.jpg') }}" class="img-circle" alt="User Image">
                                 <p>
-                                    Jesus Cristo - Web Developer
-                                    <small>Membro desde 754</small>
+                                    Nome do usuário - Gerente
                                 </p>
                             </li>
                             <li class="user-footer">
