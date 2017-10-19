@@ -56,13 +56,11 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="box box-info">
+                    <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">Últimas transações</h3>
                             <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                             </div>
                         </div>
                         <div class="box-body">
@@ -79,7 +77,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Nome Fantasia 3</td>
+                                            <td>Nome fantasia 3</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
                                                 <div class="sparkbar" data-color="#00a65a" data-height="20">R$ 189,89</div>
@@ -88,7 +86,7 @@
                                             <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
-                                            <td>Nome Fantasia 7</td>
+                                            <td>Nome fantasia 7</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
                                                 <div class="sparkbar" data-color="#f39c12" data-height="20">R$ 489,84</div>
@@ -97,7 +95,7 @@
                                             <td>Fiscal 4</td>
                                         </tr>
                                         <tr>
-                                            <td>Nome Fantasia 2</td>
+                                            <td>Nome fantasia 2</td>
                                             <td><span class="label label-danger">Despesa</span></td>
                                             <td>
                                                 <div class="sparkbar" data-color="#f56954" data-height="20">R$ 165,14</div>
@@ -106,7 +104,7 @@
                                             <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
-                                            <td>Nome Fantasia 5</td>
+                                            <td>Nome fantasia 5</td>
                                             <td><span class="label label-info">Fechamento</span></td>
                                             <td>
                                                 <div class="sparkbar" data-color="#00c0ef" data-height="20">R$ 15214,34</div>
@@ -115,7 +113,7 @@
                                             <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
-                                            <td>Nome Fantasia 8</td>
+                                            <td>Nome fantasia 8</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
                                                 <div class="sparkbar" data-color="#f39c12" data-height="20">R$ 355,26</div>
@@ -124,7 +122,7 @@
                                             <td>Fiscal 2</td>
                                         </tr>
                                         <tr>
-                                            <td>Nome Fantasia 1</td>
+                                            <td>Nome fantasia 1</td>
                                             <td><span class="label label-danger">Despesa</span></td>
                                             <td>
                                                 <div class="sparkbar" data-color="#f56954" data-height="20">R$ 83,95</div>
@@ -133,7 +131,7 @@
                                             <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
-                                            <td>Nome Fantasia 8</td>
+                                            <td>Nome fantasia 8</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
                                                 <div class="sparkbar" data-color="#00a65a" data-height="20">R$ 599,62</div>
@@ -146,8 +144,8 @@
                             </div>
                         </div>
                         <div class="box-footer clearfix">
-                            <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Nova Transação</a>
-                            <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">Ver Todas Transações</a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-primary btn-flat pull-left"><i class="fa fa-plus"></i> Nova transação</a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">Ver todas transações</a>
                         </div>
                     </div>
                 </div>
