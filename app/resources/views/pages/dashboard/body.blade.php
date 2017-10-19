@@ -3,10 +3,12 @@
     @include('components.sidebar.content')
     <div class="content-wrapper">
         <section class="content-header">
-            <h1>Dashboard<small>Painel de controle</small></h1>
-            <div class="pull-right">
-                <button type="submit" class="btn btn-warning"><i class="fa fa-print"></i> Gerar invoice</button>
-            </div>
+            <h1>
+                Dashboard<small>Painel de controle</small>
+                <div class="pull-right">
+                    <button type="submit" class="btn btn-warning"><i class="fa fa-print"></i> Gerar invoice</button>
+                </div>
+            </h1>
         </section>
         <section class="content">
             <div class="row">
