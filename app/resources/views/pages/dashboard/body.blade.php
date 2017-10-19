@@ -11,7 +11,7 @@
                     <div class="small-box bg-aqua">
                         <div class="inner">
                             <h3>R$ 15214,34</h3>
-                            <p>Último Fechamento</p>
+                            <p>Último fechamento</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-check"></i>
@@ -23,7 +23,7 @@
                     <div class="small-box bg-yellow">
                         <div class="inner">
                             <h3>R$ 5472,46</h3>
-                            <p>Saldo Pendente</p>
+                            <p>Saldo pendente</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-exclamation"></i>
@@ -55,12 +55,10 @@
                         <a href="#" class="small-box-footer">Mais <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-12">
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Últimas Transações</h3>
+                            <h3 class="box-title">Últimas transações</h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                                 </button>
@@ -72,7 +70,6 @@
                                 <table class="table no-margin">
                                     <thead>
                                         <tr>
-                                            <th>Código</th>
                                             <th>Estabelecimento</th>
                                             <th>Status</th>
                                             <th>Valor</th>
@@ -82,7 +79,6 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><a href="#">TR9842</a></td>
                                             <td>Nome Fantasia 3</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
@@ -92,7 +88,6 @@
                                             <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="#">TR1848</a></td>
                                             <td>Nome Fantasia 7</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
@@ -102,7 +97,6 @@
                                             <td>Fiscal 4</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="#">TR7429</a></td>
                                             <td>Nome Fantasia 2</td>
                                             <td><span class="label label-danger">Despesa</span></td>
                                             <td>
@@ -112,7 +106,6 @@
                                             <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="#">TR7429</a></td>
                                             <td>Nome Fantasia 5</td>
                                             <td><span class="label label-info">Fechamento</span></td>
                                             <td>
@@ -122,7 +115,6 @@
                                             <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="#">TR1848</a></td>
                                             <td>Nome Fantasia 8</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
@@ -132,7 +124,6 @@
                                             <td>Fiscal 2</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="#">TR7429</a></td>
                                             <td>Nome Fantasia 1</td>
                                             <td><span class="label label-danger">Despesa</span></td>
                                             <td>
@@ -142,7 +133,6 @@
                                             <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="#">TR9842</a></td>
                                             <td>Nome Fantasia 8</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>
@@ -161,114 +151,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <!-- Info Boxes Style 2 -->
-                    <div class="info-box bg-yellow">
-                        <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
-
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-green"><i class="fa fa-gamepad"></i></span>
                         <div class="info-box-content">
-                        <span class="info-box-text">Inventory</span>
-                        <span class="info-box-number">5,200</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 50%"></div>
+                            <span class="info-box-text">Máquinas ativas</span>
+                            <span class="info-box-number">65</span>
                         </div>
-                        <span class="progress-description">
-                                50% Increase in 30 Days
-                            </span>
-                        </div>
-                        <!-- /.info-box-content -->
                     </div>
-                    <!-- /.info-box -->
-                    <div class="info-box bg-green">
-                        <span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
-
-                        <div class="info-box-content">
-                        <span class="info-box-text">Mentions</span>
-                        <span class="info-box-number">92,050</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 20%"></div>
-                        </div>
-                        <span class="progress-description">
-                                20% Increase in 30 Days
-                            </span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                    <div class="info-box bg-red">
-                        <span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
-
-                        <div class="info-box-content">
-                        <span class="info-box-text">Downloads</span>
-                        <span class="info-box-number">114,381</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 70%"></div>
-                        </div>
-                        <span class="progress-description">
-                                70% Increase in 30 Days
-                            </span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                    <div class="info-box bg-aqua">
-                        <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
-
-                        <div class="info-box-content">
-                        <span class="info-box-text">Direct Messages</span>
-                        <span class="info-box-number">163,921</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 40%"></div>
-                        </div>
-                        <span class="progress-description">
-                                40% Increase in 30 Days
-                            </span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7    ">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-aqua"><i class="fa fa-gamepad"></i></span>
-                            <div class="info-box-content">
-                                <span class="info-box-text">Máquinas Ativas</span>
-                                <span class="info-box-number">65</span>
-                            </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-red"><i class="fa fa-gamepad"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Máquinas inativas</span>
+                            <span class="info-box-number">4</span>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-red"><i class="fa fa-gamepad"></i></span>
-                            <div class="info-box-content">
-                                <span class="info-box-text">Máquinas Inativas</span>
-                                <span class="info-box-number">4</span>
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-green"><i class="fa fa-bank"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Estabelecimentos ativos</span>
+                            <span class="info-box-number">43</span>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-green"><i class="fa fa-bank"></i></span>
-                            <div class="info-box-content">
-                                <span class="info-box-text">Estabelecimentos</span>
-                                <span class="info-box-number">43</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-yellow"><i class="fa fa-user"></i></span>
-                            <div class="info-box-content">
-                                <span class="info-box-text">Usuários</span>
-                                <span class="info-box-number">4</span>
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-red"><i class="fa fa-bank"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Estabelecimentos inativos</span>
+                            <span class="info-box-number">2</span>
                         </div>
                     </div>
                 </div>

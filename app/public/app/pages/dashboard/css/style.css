@@ -1,0 +1,16 @@
+.app .info-box-text {
+    font-size: 12px;
+    white-space: unset;
+}
+
+.app .small-box h3 {
+    font-size: 28px;
+}
+
+.app .small-box .icon {
+    font-size: 80px;
+}
+
+.app .small-box:hover .icon {
+    font-size: 85px;
+}
