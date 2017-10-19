@@ -62,7 +62,7 @@
                     </form>
                 </div>
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-default">Cancelar</button>
+                    <a href="/transaction/list" class="btn btn-default">Cancelar</a>
                     <div class="pull-right">
                         <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
                         <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>

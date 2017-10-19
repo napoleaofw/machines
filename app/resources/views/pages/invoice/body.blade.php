@@ -5,45 +5,41 @@
         <section class="content-header">
             <h1>
                 Invoice
-                <small>#000001</small>
+                <small>#000000001</small>
             </h1>
         </section>
         <section class="invoice">
             <div class="row">
                 <div class="col-xs-12">
                     <h2 class="page-header">
-                        <i class="fa fa-globe"></i> AdminLTE, Inc.
-                        <small class="pull-right">Date: 2/10/2014</small>
+                        <i class="fa fa-globe"></i> Nome da empresa.
+                        <small class="pull-right">Data: 18/10/2017</small>
                     </h2>
                 </div>
             </div>
             <div class="row invoice-info">
                 <div class="col-sm-4 invoice-col">
-                    From
+                    De
                     <address>
-                        <strong>Admin, Inc.</strong><br>
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        Phone: (804) 123-5432<br>
-                        Email: info@almasaeedstudio.com
+                        <strong>Nome da empresa</strong><br>
+                        Rua da empresa, 100 - Centro<br>
+                        Porto Alegre - RS, 00000-000<br>
+                        Telefone: (51) 99999-9999<br>
+                        E-mail: empresa@empresa.com
                     </address>
                 </div>
                 <div class="col-sm-4 invoice-col">
-                    To
+                    Para
                     <address>
-                        <strong>John Doe</strong><br>
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        Phone: (555) 539-1037<br>
-                        Email: john.doe@example.com
+                        <strong>Estabelecimento</strong><br>
+                        Rua do estabelecimento, 200 - Centro<br>
+                        São Paulo - SP, 00000-000<br>
+                        Telefone: (11) 98888-8888<br>
+                        E-mail: estabelecimento@00000-000.com
                     </address>
                 </div>
                 <div class="col-sm-4 invoice-col">
-                    <b>Invoice #007612</b><br>
-                    <br>
-                    <b>Order ID:</b> 4F3S8J<br>
-                    <b>Payment Due:</b> 2/22/2014<br>
-                    <b>Account:</b> 968-34567
+                    <b>Invoice #000000001</b><br>
                 </div>
             </div>
             <div class="row">
@@ -51,76 +47,62 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Qty</th>
-                                <th>Product</th>
-                                <th>Serial #</th>
-                                <th>Description</th>
-                                <th>Subtotal</th>
+                                <th>Tipo</th>
+                                <th>Data</th>
+                                <th>Máquina</th>
+                                <th>Valor</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>Call of Duty</td>
-                                <td>455-981-221</td>
-                                <td>El snort testosterone trophy driving gloves handsome</td>
-                                <td>$64.50</td>
+                                <td>Receita</td>
+                                <td>12/09/2017</td>
+                                <td>Máquina 2</td>
+                                <td>R$ 285,34</td>
                             </tr>
                             <tr>
-                                <td>1</td>
-                                <td>Need for Speed IV</td>
-                                <td>247-925-726</td>
-                                <td>Wes Anderson umami biodiesel</td>
-                                <td>$50.00</td>
+                                <td>Despesa</td>
+                                <td>18/09/2017</td>
+                                <td>Máquina 1</td>
+                                <td>R$ 50,86</td>
                             </tr>
                             <tr>
-                                <td>1</td>
-                                <td>Monsters DVD</td>
-                                <td>735-845-642</td>
-                                <td>Terry Richardson helvetica tousled street art master</td>
-                                <td>$10.70</td>
+                                <td>Receita</td>
+                                <td>25/09/2017</td>
+                                <td>Máquina 3</td>
+                                <td>R$ 98,63</td>
                             </tr>
                             <tr>
-                                <td>1</td>
-                                <td>Grown Ups Blue Ray</td>
-                                <td>422-568-642</td>
-                                <td>Tousled lomo letterpress</td>
-                                <td>$25.99</td>
+                                <td>Receita</td>
+                                <td>27/09/2017</td>
+                                <td>Máquina 2</td>
+                                <td>R$ 154,25</td>
+                            </tr>
+                            <tr>
+                                <td>Receita</td>
+                                <td>29/09/2017</td>
+                                <td>Máquina 1</td>
+                                <td>R$ 74,58</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-6">
-                    <p class="lead">Payment Methods:</p>
-                    <img src="../../dist/img/credit/visa.png" alt="Visa">
-                    <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
-                    <img src="../../dist/img/credit/american-express.png" alt="American Express">
-                    <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
-                    <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
-                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-                    </p>
-                </div>
-                <div class="col-xs-6">
-                    <p class="lead">Amount Due 2/22/2014</p>
+                <div class="col-xs-6 col-xs-offset-6">
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
-                                <th style="width:50%">Subtotal:</th>
-                                <td>$250.30</td>
+                                <th style="width:50%">Receita:</th>
+                                <td>R$ 612,80</td>
                             </tr>
                             <tr>
-                                <th>Tax (9.3%)</th>
-                                <td>$10.34</td>
-                            </tr>
-                            <tr>
-                                <th>Shipping:</th>
-                                <td>$5.80</td>
+                                <th>Despesa:</th>
+                                <td>R$ 50,86</td>
                             </tr>
                             <tr>
                                 <th>Total:</th>
-                                <td>$265.24</td>
+                                <td>R$ 561,94</td>
                             </tr>
                         </table>
                     </div>
@@ -128,11 +110,8 @@
             </div>
             <div class="row no-print">
                 <div class="col-xs-12">
-                    <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
-                    <button type="button" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Submit Payment</button>
-                    <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
-                        <i class="fa fa-download"></i> Generate PDF
-                    </button>
+                    <button type="button" class="btn btn-default btn-print"><i class="fa fa-print"></i> Imprimir</a>
+                    <button type="button" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Finalizar</button>
                 </div>
             </div>
         </section>

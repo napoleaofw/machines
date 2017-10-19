@@ -12,7 +12,7 @@
             <div class="box">
                 <div class="box-header with-border">
                     <div class="pull-right">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Nova máquina</button>
+                        <a href="/user/register" class="btn btn-primary"><i class="fa fa-plus"></i> Novo usuário</a>
                     </div>
                 </div>
                 <div class="box-body table-responsive">
