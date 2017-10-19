@@ -4,6 +4,9 @@
     <div class="content-wrapper">
         <section class="content-header">
             <h1>Dashboard<small>Painel de controle</small></h1>
+            <div class="pull-right">
+                <button type="submit" class="btn btn-warning"><i class="fa fa-print"></i> Gerar invoice</button>
+            </div>
         </section>
         <section class="content">
             <div class="row">
@@ -16,7 +19,6 @@
                         <div class="icon">
                             <i class="fa fa-check"></i>
                         </div>
-                        <a href="#" class="small-box-footer">Mais <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -28,7 +30,6 @@
                         <div class="icon">
                             <i class="fa fa-exclamation"></i>
                         </div>
-                        <a href="#" class="small-box-footer">Mais <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -40,7 +41,6 @@
                         <div class="icon">
                             <i class="fa fa-arrow-circle-up"></i>
                         </div>
-                        <a href="#" class="small-box-footer">Mais <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -52,7 +52,6 @@
                         <div class="icon">
                             <i class="fa fa-arrow-circle-down"></i>
                         </div>
-                        <a href="#" class="small-box-footer">Mais <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -69,7 +68,7 @@
                                     <thead>
                                         <tr>
                                             <th>Estabelecimento</th>
-                                            <th>Status</th>
+                                            <th>Tipo</th>
                                             <th>Valor</th>
                                             <th>Máquina</th>
                                             <th>Fiscal</th>

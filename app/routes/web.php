@@ -11,12 +11,12 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/login', function () {
     return view('pages.login.index');
+});
+
+Route::get('/dashboard', function () {
+    return view('pages.dashboard.index');
 });
 
 Route::get('/user/register', function () {
@@ -44,13 +44,13 @@ Route::get('/machine/list', function () {
 });
 
 Route::get('/transaction/register', function () {
-    return view('pages.transaction.register.index');
+    return view('pages.transaction.form.index');
 });
 
 Route::get('/transaction/list', function () {
     return view('pages.transaction.list.index');
 });
 
-Route::get('/dashboard', function () {
-    return view('pages.dashboard.index');
+Route::get('/invoice', function () {
+    return view('pages.invoice.index');
 });

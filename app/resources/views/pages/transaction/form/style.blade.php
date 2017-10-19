@@ -1,0 +1,1 @@
+<link rel="stylesheet" type="text/css" href="{{ url('/vendor/adminlte/css/bootstrap-datepicker.min.css') }}">
