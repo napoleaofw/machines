@@ -1,5 +1,10 @@
-.app .table-machines > .table {
-    margin-bottom: 0;
+.app .page-header > small {
+    margin-top: 15px;
+}
+
+.app .table-machines {
+    border: none;
+    margin: 0;
 }
 
 .app .table-machines > .table > tbody > tr > td,

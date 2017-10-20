@@ -7,16 +7,19 @@
                 <h4 class="modal-title">Gerar invoice</h4>
             </div>
             <div class="modal-body">
-                <p>Escolha para qual(is) estabelecimento(s) deve(m) ser gerada(s) a(s) invoice(s).</p>
-                <div class="form-group">
-                    <label>Estabelecimento(s)</label>
-                    <select class="form-control" multiple="multiple" data-placeholder="Selecione">
-                        <option value="estabelecimento1">Estabelecimento 1</option>
-                        <option value="estabelecimento2">Estabelecimento 2</option>
-                        <option value="estabelecimento3">Estabelecimento 3</option>
-                        <option value="estabelecimento4">Estabelecimento 4</option>
-                        <option value="estabelecimento5">Estabelecimento 5</option>
-                    </select>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>Estabelecimento(s)</label>
+                            <select class="form-control select2" multiple="multiple" data-placeholder="Selecione" style="width: 100%;">
+                                <option value="estabelecimento1">Estabelecimento 1</option>
+                                <option value="estabelecimento2">Estabelecimento 2</option>
+                                <option value="estabelecimento3">Estabelecimento 3</option>
+                                <option value="estabelecimento4">Estabelecimento 4</option>
+                                <option value="estabelecimento5">Estabelecimento 5</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">

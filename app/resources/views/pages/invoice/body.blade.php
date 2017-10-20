@@ -95,10 +95,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-sm-6 col-xs-12">
                     <p class="lead">Comissão por máquina</p>
                     <div class="text-muted well well-sm no-shadow">
-                    <!-- <div> -->
                         <div class="table-responsive table-machines">
                             <table class="table">
                                 <tr>
@@ -117,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 col-xs-offset-2">
+                <div class="col-sm-4 col-sm-offset-2 col-xs-12">
                     <p class="lead">Totais</p>
                     <div class="table-responsive">
                         <table class="table">
