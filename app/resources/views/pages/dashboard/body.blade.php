@@ -176,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <span class="info-box-icon bg-green"><i class="fa fa-gamepad"></i></span>
                         <div class="info-box-content">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <span class="info-box-icon bg-red"><i class="fa fa-gamepad"></i></span>
                         <div class="info-box-content">
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <span class="info-box-icon bg-green"><i class="fa fa-bank"></i></span>
                         <div class="info-box-content">
@@ -203,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <span class="info-box-icon bg-red"><i class="fa fa-bank"></i></span>
                         <div class="info-box-content">
