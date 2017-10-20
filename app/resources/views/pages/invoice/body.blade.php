@@ -95,12 +95,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-6">
-                    <p class="lead">Comissão por máquina:</p>
+                <div class="col-xs-8">
+                    <p class="lead">Comissão por máquina</p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
-                                <th style="width:20%">Máquina 1:</th>
+                                <th style="width:10%">Máquina 1:</th>
                                 <td>R$ 12,55</td>
                             </tr>
                             <tr>
@@ -114,7 +114,8 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-4">
+                    <p class="lead">Totais</p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
