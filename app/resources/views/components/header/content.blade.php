@@ -11,7 +11,7 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="hidden-xs">Nome do usuário</span>
+                            <span>Nome do usuário</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="user-header">

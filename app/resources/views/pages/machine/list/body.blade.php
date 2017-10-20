@@ -9,7 +9,7 @@
             </h1>
         </section>
         <section class="content">
-            <div class="box">
+            <div class="box box-primary">
                 <div class="box-header with-border">
                     <div class="pull-right">
                         <a href="/machine/register" class="btn btn-primary"><i class="fa fa-plus"></i> Nova máquina</a>
