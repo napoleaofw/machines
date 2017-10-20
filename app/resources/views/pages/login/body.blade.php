@@ -1,4 +1,7 @@
 <div class="login-box">
+    <div class="login-logo">
+        <a href="#"><b>WN</b>AP</a>
+    </div>
     <div class="login-box-body">
         <form action="/dashboard" method="get">
             <div class="form-group has-feedback">
