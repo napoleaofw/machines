@@ -1,0 +1,7 @@
+.app .table-machines table {
+    margin-bottom: 0;
+}
+
+.app .table-machines table tr {
+    height: 25px;
+}

@@ -1,0 +1,1 @@
+<link rel="stylesheet" type="text/css" href="{{ url('/app/pages/invoice/css/style.css') }}">

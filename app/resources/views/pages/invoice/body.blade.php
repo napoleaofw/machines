@@ -95,31 +95,33 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-8">
+                <div class="col-xs-3">
                     <p class="lead">Comissão por máquina</p>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th style="width:10%">Máquina 1:</th>
-                                <td>R$ 12,55</td>
-                            </tr>
-                            <tr>
-                                <th>Máquina 2:</th>
-                                <td>R$ 43,96</td>
-                            </tr>
-                            <tr>
-                                <th>Máquina 3:</th>
-                                <td>R$ 9,86</td>
-                            </tr>
-                        </table>
+                    <div class="text-muted well well-sm no-shadow">
+                        <div class="table-responsive table-machines">
+                            <table class="table">
+                                <tr>
+                                    <th style="width:50%">Máquina 1:</th>
+                                    <td>R$ 12,55</td>
+                                </tr>
+                                <tr>
+                                    <th>Máquina 2:</th>
+                                    <td>R$ 43,96</td>
+                                </tr>
+                                <tr>
+                                    <th>Máquina 3:</th>
+                                    <td>R$ 9,86</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 col-xs-offset-5">
                     <p class="lead">Totais</p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
-                                <th style="width:40%">Saldo:</th>
+                                <th style="width:50%">Saldo:</th>
                                 <td>R$ 561,94</td>
                             </tr>
                             <tr>
