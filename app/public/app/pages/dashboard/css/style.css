@@ -14,3 +14,11 @@
 .app .small-box:hover .icon {
     font-size: 85px;
 }
+
+.skin-black-light .content-header {
+    display: flex;
+}
+
+.content-header>h1 {
+    width: 95%;
+}

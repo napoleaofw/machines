@@ -31,16 +31,14 @@
     @include('components.sidebar.content')
     <div class="content-wrapper">
         <section class="content-header">
-            <h1>
-                Dashboard<small>Painel de controle</small>
-                <div class="pull-right">
-                    <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#modal-invoice"><i class="fa fa-print"></i> Gerar invoice</button>
-                </div>
-            </h1>
+            <h1 class="">Dashboard<small>Painel de controle</small></h1>
+            <div class="pull-right">
+                <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#modal-invoice"><i class="fa fa-print"></i> Gerar invoice</button>
+            </div>
         </section>
         <section class="content">
             <div class="row">
-                <div class="col-lg-3 col-xs-6">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="small-box bg-aqua">
                         <div class="inner">
                             <h3>R$ 15214,34</h3>
@@ -51,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xs-6">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="small-box bg-yellow">
                         <div class="inner">
                             <h3>R$ 5472,46</h3>
@@ -62,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xs-6">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="small-box bg-green">
                         <div class="inner">
                             <h3>R$ 8477,54</h3>
@@ -73,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xs-6">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="small-box bg-red">
                         <div class="inner">
                             <h3>R$ 3005,08</h3>
@@ -84,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-xs-12">
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">Últimas transações</h3>
