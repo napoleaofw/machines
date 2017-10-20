@@ -1,3 +1,31 @@
+<div class="modal fade" id="modal-invoice">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Gerar invoice</h4>
+            </div>
+            <div class="modal-body">
+                <p>Escolha para qual(is) estabelecimento(s) deve(m) ser gerada(s) a(s) invoice(s).</p>
+                <div class="form-group">
+                    <label>Estabelecimento(s)</label>
+                    <select class="form-control" multiple="multiple" data-placeholder="Selecione">
+                        <option value="estabelecimento1">Estabelecimento 1</option>
+                        <option value="estabelecimento2">Estabelecimento 2</option>
+                        <option value="estabelecimento3">Estabelecimento 3</option>
+                        <option value="estabelecimento4">Estabelecimento 4</option>
+                        <option value="estabelecimento5">Estabelecimento 5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Gerar</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="wrapper">
     @include('components.header.content')
     @include('components.sidebar.content')
@@ -6,7 +34,7 @@
             <h1>
                 Dashboard<small>Painel de controle</small>
                 <div class="pull-right">
-                    <button type="submit" class="btn btn-warning"><i class="fa fa-print"></i> Gerar invoice</button>
+                    <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#modal-invoice"><i class="fa fa-print"></i> Gerar invoice</button>
                 </div>
             </h1>
         </section>

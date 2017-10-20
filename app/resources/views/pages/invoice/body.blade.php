@@ -47,62 +47,87 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Tipo</th>
                                 <th>Data</th>
                                 <th>Máquina</th>
-                                <th>Valor</th>
+                                <th>Observação</th>
+                                <th>Saldo</th>
+                                <th>Comissão</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Receita</td>
                                 <td>12/09/2017</td>
                                 <td>Máquina 2</td>
+                                <td></td>
                                 <td>R$ 285,34</td>
+                                <td>R$ 28,53</td>
                             </tr>
                             <tr>
-                                <td>Despesa</td>
                                 <td>18/09/2017</td>
                                 <td>Máquina 1</td>
+                                <td>A máquina apresentou problema durante o período da tarde.</td>
                                 <td>R$ 50,86</td>
+                                <td>R$ 5,09</td>
                             </tr>
                             <tr>
-                                <td>Receita</td>
                                 <td>25/09/2017</td>
                                 <td>Máquina 3</td>
+                                <td></td>
                                 <td>R$ 98,63</td>
+                                <td>R$ 9,86</td>
                             </tr>
                             <tr>
-                                <td>Receita</td>
                                 <td>27/09/2017</td>
                                 <td>Máquina 2</td>
+                                <td></td>
                                 <td>R$ 154,25</td>
+                                <td>R$ 15,43</td>
                             </tr>
                             <tr>
-                                <td>Receita</td>
                                 <td>29/09/2017</td>
                                 <td>Máquina 1</td>
+                                <td></td>
                                 <td>R$ 74,58</td>
+                                <td>R$ 7,46</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-6 col-xs-offset-6">
+                <div class="col-xs-6">
+                    <p class="lead">Comissão por máquina:</p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
-                                <th style="width:50%">Receita:</th>
-                                <td>R$ 612,80</td>
+                                <th style="width:20%">Máquina 1:</th>
+                                <td>R$ 12,55</td>
                             </tr>
                             <tr>
-                                <th>Despesa:</th>
-                                <td>R$ 50,86</td>
+                                <th>Máquina 2:</th>
+                                <td>R$ 43,96</td>
+                            </tr>
+                            <tr>
+                                <th>Máquina 3:</th>
+                                <td>R$ 9,86</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th style="width:40%">Saldo:</th>
+                                <td>R$ 561,94</td>
+                            </tr>
+                            <tr>
+                                <th>Comissão:</th>
+                                <td>R$ 56,19</td>
                             </tr>
                             <tr>
                                 <th>Total:</th>
-                                <td>R$ 561,94</td>
+                                <td>R$ 505,75</td>
                             </tr>
                         </table>
                     </div>

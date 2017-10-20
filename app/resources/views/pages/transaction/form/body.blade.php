@@ -40,6 +40,12 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
+                                    <label>Observação</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
                                     <label>Tipo</label>
                                     <select class="form-control">
                                         <option value="">Selecione</option>
@@ -47,8 +53,6 @@
                                         <option value="receita">Receita</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Valor</label>
                                     <input type="text" class="form-control">
