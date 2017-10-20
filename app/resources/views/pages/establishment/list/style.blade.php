@@ -1,1 +1,2 @@
 <link rel="stylesheet" type="text/css" href="{{ url('/vendor/adminlte/css/dataTables.bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url('/app/pages/establishment/list/css/style.css') }}">

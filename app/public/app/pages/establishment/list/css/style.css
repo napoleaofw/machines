@@ -1,0 +1,9 @@
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .app .pagination > li > a,
+    .app .pagination > li > span {
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 5px 10px;
+    }
+}

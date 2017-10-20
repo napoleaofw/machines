@@ -13,15 +13,16 @@ $(document).ready(function() {
             "sZeroRecords": "Nenhum registro encontrado",
             "sSearch": "Pesquisar",
             "oPaginate": {
-                "sNext": "Próximo",
-                "sPrevious": "Anterior",
-                "sFirst": "Primeiro",
-                "sLast": "Último"
+                "sNext": "&rsaquo;",
+                "sPrevious": "&lsaquo;",
+                "sFirst": "&laquo;",
+                "sLast": "&raquo;"
             },
             "oAria": {
                 "sSortAscending": ": Ordenar colunas de forma ascendente",
                 "sSortDescending": ": Ordenar colunas de forma descendente"
             }
-        }
+        },
+        "responsive": true
     });
 });
