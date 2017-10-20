@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 EU ESTOU TESTANDO
 EU TAMBÉM
+=======
+EU ESTOU TESTANDOooooo
+>>>>>>> b171e86e89f267a70ff9dc85de02b9d70bd6a46f
