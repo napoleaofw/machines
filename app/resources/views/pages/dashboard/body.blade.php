@@ -21,7 +21,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Gerar</button>
+                <a href="/invoice" class="btn btn-primary">Gerar</a>
             </div>
         </div>
     </div>
@@ -173,8 +173,8 @@
                             </div>
                         </div>
                         <div class="box-footer clearfix">
-                            <a href="javascript:void(0)" class="btn btn-sm btn-primary btn-flat pull-left"><i class="fa fa-plus"></i> Nova transação</a>
-                            <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">Ver todas transações</a>
+                            <a href="/transaction/register" class="btn btn-sm btn-primary btn-flat pull-left"><i class="fa fa-plus"></i> Nova transação</a>
+                            <a href="/transaction/list" class="btn btn-sm btn-default btn-flat pull-right">Ver todas transações</a>
                         </div>
                     </div>
                 </div>

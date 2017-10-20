@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h2 class="page-header">
-                        <i class="fa fa-globe"></i> Nome da empresa.
+                        <i class="fa fa-globe"></i> Nome da empresa
                         <small class="pull-right">Data: 18/10/2017</small>
                     </h2>
                 </div>
@@ -95,13 +95,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-3">
+                <div class="col-xs-6">
                     <p class="lead">Comissão por máquina</p>
                     <div class="text-muted well well-sm no-shadow">
+                    <!-- <div> -->
                         <div class="table-responsive table-machines">
                             <table class="table">
                                 <tr>
-                                    <th style="width:50%">Máquina 1:</th>
+                                    <th>Máquina 1:</th>
                                     <td>R$ 12,55</td>
                                 </tr>
                                 <tr>
@@ -116,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 col-xs-offset-5">
+                <div class="col-xs-4 col-xs-offset-2">
                     <p class="lead">Totais</p>
                     <div class="table-responsive">
                         <table class="table">

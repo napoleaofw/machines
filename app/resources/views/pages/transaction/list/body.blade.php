@@ -12,7 +12,7 @@
             <div class="box">
                 <div class="box-header with-border">
                     <div class="pull-right">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Nova transação</button>
+                        <a href="/transaction/register" class="btn btn-primary"><i class="fa fa-plus"></i> Nova transação</a>
                     </div>
                 </div>
                 <div class="box-body table-responsive">

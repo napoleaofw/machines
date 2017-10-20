@@ -1,12 +1,14 @@
-.app .table-machines table {
+.app .table-machines > .table {
     margin-bottom: 0;
 }
 
-.app .table-machines table tr {
-    height: 25px;
-}
-
-.app .table-machines table tr th,
-.app .table-machines table tr td {
-    border: 0;
+.app .table-machines > .table > tbody > tr > td,
+.app .table-machines > .table > tbody > tr > th,
+.app .table-machines > .table > thead > tr > td,
+.app .table-machines > .table > thead > tr > th,
+.app .table-machines > .table > tfoot > tr > td,
+.app .table-machines > .table > tfoot > tr > th {
+    border: none;
+    font-size: 12px;
+    padding: 2px;
 }
