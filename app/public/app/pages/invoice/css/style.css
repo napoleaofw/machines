@@ -5,3 +5,8 @@
 .app .table-machines table tr {
     height: 25px;
 }
+
+.app .table-machines table tr th,
+.app .table-machines table tr td {
+    border: 0;
+}
