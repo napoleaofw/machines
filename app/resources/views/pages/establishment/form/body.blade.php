@@ -33,6 +33,17 @@
                                     <label>Endereço</label>
                                     <input type="text" class="form-control">
                                 </div>
+                                <div class="form-group">
+                                    <label>Fiscal</label>
+                                    <select class="form-control">
+                                        <option value="">Selecione</option>
+                                        <option value="active">Fiscal 1</option>
+                                        <option value="active">Fiscal 2</option>
+                                        <option value="active">Fiscal 3</option>
+                                        <option value="active">Fiscal 4</option>
+                                        <option value="active">Fiscal 5</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -53,6 +64,10 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone 3</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Percentual de comissão</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>

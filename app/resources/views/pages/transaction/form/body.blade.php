@@ -54,7 +54,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Valor</label>
+                                    <label>Quantidade de créditos</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">

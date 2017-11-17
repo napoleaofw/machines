@@ -25,6 +25,8 @@
                                 <th>Endereço</th>
                                 <th>Telefone(s)</th>
                                 <th>E-mail</th>
+                                <th>Fiscal</th>
+                                <th>Percentual comissão</th>
                                 <th>Situação</th>
                             </tr>
                         </thead>
@@ -36,6 +38,8 @@
                                 <td>Rua do estabelecimento, 101 - Centro</td>
                                 <td>(11) 91111-1111, (11) 91111-1111</td>
                                 <td>estabelecimento1@hotmail.com</td>
+                                <td>Fiscal 1</td>
+                                <td>3</td>
                                 <td>Ativo</td>
                             </tr>
                             <tr>
@@ -45,6 +49,8 @@
                                 <td>Rua do estabelecimento, 102 - Centro</td>
                                 <td>(11) 92222-2222, (11) 92222-2222</td>
                                 <td>estabelecimento2@hotmail.com</td>
+                                <td>Fiscal 2</td>
+                                <td>5</td>
                                 <td>Inativo</td>
                             </tr>
                             <tr>
@@ -54,6 +60,8 @@
                                 <td>Rua do estabelecimento, 103 - Centro</td>
                                 <td>(11) 93333-3333, (11) 93333-3333</td>
                                 <td>estabelecimento3@hotmail.com</td>
+                                <td>Fiscal 3</td>
+                                <td>2</td>
                                 <td>Ativo</td>
                             </tr>
                             <tr>
@@ -63,6 +71,8 @@
                                 <td>Rua do estabelecimento, 104 - Centro</td>
                                 <td>(11) 94444-4444, (11) 94444-4444</td>
                                 <td>estabelecimento4@hotmail.com</td>
+                                <td>Fiscal 4</td>
+                                <td>3</td>
                                 <td>Inativo</td>
                             </tr>
                             <tr>
@@ -72,6 +82,8 @@
                                 <td>Rua do estabelecimento, 105 - Centro</td>
                                 <td>(11) 95555-5555, (11) 95555-5555</td>
                                 <td>estabelecimento5@hotmail.com</td>
+                                <td>Fiscal 5</td>
+                                <td>5</td>
                                 <td>Ativo</td>
                             </tr>
                             <tr>
@@ -81,6 +93,8 @@
                                 <td>Rua do estabelecimento, 106 - Centro</td>
                                 <td>(11) 96666-6666, (11) 96666-6666</td>
                                 <td>estabelecimento6@hotmail.com</td>
+                                <td>Fiscal 1</td>
+                                <td>4</td>
                                 <td>Inativo</td>
                             </tr>
                             <tr>
@@ -90,6 +104,8 @@
                                 <td>Rua do estabelecimento, 107 - Centro</td>
                                 <td>(11) 97777-7777, (11) 97777-7777</td>
                                 <td>estabelecimento7@hotmail.com</td>
+                                <td>Fiscal 2</td>
+                                <td>3</td>
                                 <td>Ativo</td>
                             </tr>
                             <tr>
@@ -99,6 +115,8 @@
                                 <td>Rua do estabelecimento, 108 - Centro</td>
                                 <td>(11) 98888-8888, (11) 98888-8888</td>
                                 <td>estabelecimento8@hotmail.com</td>
+                                <td>Fiscal 3</td>
+                                <td>4</td>
                                 <td>Inativo</td>
                             </tr>
                         </tbody>
@@ -110,6 +128,8 @@
                                 <th>Endereço</th>
                                 <th>Telefone(s)</th>
                                 <th>E-mail</th>
+                                <th>Fiscal</th>
+                                <th>Percentual comissão</th>
                                 <th>Situação</th>
                             </tr>
                         </tfoot>

@@ -32,8 +32,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Observação</label>
-                                    <textarea class="form-control"></textarea>
+                                    <label>Valor do crédito</label>
+                                    <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Situação</label>
@@ -42,6 +42,10 @@
                                         <option value="active">Ativo</option>
                                         <option value="inactive">Inativo</option>
                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Observação</label>
+                                    <textarea class="form-control"></textarea>
                                 </div>
                             </div>
                         </div>

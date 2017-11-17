@@ -100,7 +100,9 @@
                                         <tr>
                                             <th>Estabelecimento</th>
                                             <th>Tipo</th>
-                                            <th>Valor</th>
+                                            <th>Quantidade créditos</th>
+                                            <th>Valor crédito</th>
+                                            <th>Valor total</th>
                                             <th>Máquina</th>
                                             <th>Fiscal</th>
                                         </tr>
@@ -109,63 +111,63 @@
                                         <tr>
                                             <td>Nome fantasia 3</td>
                                             <td><span class="label label-success">Receita</span></td>
-                                            <td>
-                                                <div class="sparkbar" data-color="#00a65a" data-height="20">R$ 189,89</div>
-                                            </td>
+                                            <td>54</td>
+                                            <td>R$ 15,00</td>
+                                            <td>R$ 810,00</td>
                                             <td>Máquina 2</td>
                                             <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 7</td>
                                             <td><span class="label label-success">Receita</span></td>
-                                            <td>
-                                                <div class="sparkbar" data-color="#f39c12" data-height="20">R$ 489,84</div>
-                                            </td>
+                                            <td>32</td>
+                                            <td>R$ 6,00</td>
+                                            <td>R$ 192,00</td>
                                             <td>Máquina 6</td>
                                             <td>Fiscal 4</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 2</td>
                                             <td><span class="label label-danger">Despesa</span></td>
-                                            <td>
-                                                <div class="sparkbar" data-color="#f56954" data-height="20">R$ 165,14</div>
-                                            </td>
+                                            <td>15</td>
+                                            <td>R$ 86,00</td>
+                                            <td>R$ 1290,00</td>
                                             <td>Máquina 8</td>
                                             <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 5</td>
                                             <td><span class="label label-info">Fechamento</span></td>
-                                            <td>
-                                                <div class="sparkbar" data-color="#00c0ef" data-height="20">R$ 15214,34</div>
-                                            </td>
+                                            <td>26</td>
+                                            <td>R$ 1,00</td>
+                                            <td>R$ 26,00</td>
                                             <td>Máquina 5</td>
                                             <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 8</td>
                                             <td><span class="label label-success">Receita</span></td>
-                                            <td>
-                                                <div class="sparkbar" data-color="#f39c12" data-height="20">R$ 355,26</div>
-                                            </td>
+                                            <td>25</td>
+                                            <td>R$ 28,00</td>
+                                            <td>R$ 700,00</td>
                                             <td>Máquina 3</td>
                                             <td>Fiscal 2</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 1</td>
                                             <td><span class="label label-danger">Despesa</span></td>
-                                            <td>
-                                                <div class="sparkbar" data-color="#f56954" data-height="20">R$ 83,95</div>
-                                            </td>
+                                            <td>54</td>
+                                            <td>R$ 32,00</td>
+                                            <td>R$ 1728,00</td>
                                             <td>Máquina 4</td>
                                             <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 8</td>
                                             <td><span class="label label-success">Receita</span></td>
-                                            <td>
-                                                <div class="sparkbar" data-color="#00a65a" data-height="20">R$ 599,62</div>
-                                            </td>
+                                            <td>68</td>
+                                            <td>R$ 2,00</td>
+                                            <td>R$ 136,00</td>
                                             <td>Máquina 1</td>
                                             <td>Fiscal 1</td>
                                         </tr>
