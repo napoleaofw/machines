@@ -3,9 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Traits\Userstamps;
+use App\Models\Machine;
+use App\Models\Establishment;
 
 class Transaction extends Model
 {
+    use Userstamps;
+
     /**
      * The table associated with the model.
      *
@@ -42,4 +47,20 @@ class Transaction extends Model
         'created_at',
         'updated_at'
     ];
+
+    /**
+     * Get the machine that owns the transaction.
+     */
+    public function machine()
+    {
+        return $this->belongsTo(Machine::class, 'machine_id');
+    }
+
+    /**
+     * Get the establishment that owns the transaction.
+     */
+    public function establishment()
+    {
+        return $this->belongsTo(Establishment::class, 'establishment_id');
+    }
 }
