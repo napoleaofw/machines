@@ -3,9 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Traits\Userstamps;
+use App\Models\Machine;
+use App\Models\Transaction;
+use App\Models\User;
 
 class Establishment extends Model
 {
+    use Userstamps;
+
     /**
      * The table associated with the model.
      *
@@ -21,6 +27,7 @@ class Establishment extends Model
     protected $guarded = [
         'id',
         'fiscal_user_id',
+        'establishment_id',
         'created_by',
         'updated_by',
         'created_at',
@@ -35,9 +42,34 @@ class Establishment extends Model
     protected $hidden = [
         'id',
         'fiscal_user_id',
+        'establishment_id',
         'created_by',
         'updated_by',
         'created_at',
         'updated_at'
     ];
+
+    /**
+     * Get the fiscal user that owns the establishment.
+     */
+    public function fiscal()
+    {
+        return $this->belongsTo(User::class, 'fiscal_user_id');
+    }
+
+    /**
+     * Get the machines for the establishment.
+     */
+    public function machines()
+    {
+        return $this->hasMany(Machine::class, 'establishment_id');
+    }
+
+    /**
+     * Get the transactions for the establishment.
+     */
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class, 'establishment_id');
+    }
 }
