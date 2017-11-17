@@ -99,77 +99,77 @@
                                     <thead>
                                         <tr>
                                             <th>Estabelecimento</th>
+                                            <th>Máquina</th>
+                                            <th>Usuário</th>
                                             <th>Tipo</th>
                                             <th>Quantidade créditos</th>
                                             <th>Valor crédito</th>
                                             <th>Valor total</th>
-                                            <th>Máquina</th>
-                                            <th>Fiscal</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>Nome fantasia 3</td>
+                                            <td>Máquina 2</td>
+                                            <td>Gerente - Usuário 1</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>54</td>
                                             <td>R$ 15,00</td>
                                             <td>R$ 810,00</td>
-                                            <td>Máquina 2</td>
-                                            <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 7</td>
+                                            <td>Máquina 6</td>
+                                            <td>Fiscal - Usuário 4</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>32</td>
                                             <td>R$ 6,00</td>
                                             <td>R$ 192,00</td>
-                                            <td>Máquina 6</td>
-                                            <td>Fiscal 4</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 2</td>
+                                            <td>Máquina 8</td>
+                                            <td>Gerente - Usuário 1</td>
                                             <td><span class="label label-danger">Despesa</span></td>
                                             <td>15</td>
                                             <td>R$ 86,00</td>
                                             <td>R$ 1290,00</td>
-                                            <td>Máquina 8</td>
-                                            <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 5</td>
+                                            <td>Máquina 5</td>
+                                            <td>Fiscal - Usuário 7</td>
                                             <td><span class="label label-info">Fechamento</span></td>
                                             <td>26</td>
                                             <td>R$ 1,00</td>
                                             <td>R$ 26,00</td>
-                                            <td>Máquina 5</td>
-                                            <td>Fiscal 1</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 8</td>
+                                            <td>Máquina 3</td>
+                                            <td>Fiscal - Usuário 4</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>25</td>
                                             <td>R$ 28,00</td>
                                             <td>R$ 700,00</td>
-                                            <td>Máquina 3</td>
-                                            <td>Fiscal 2</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 1</td>
+                                            <td>Máquina 4</td>
+                                            <td>Fiscal - Usuário 2</td>
                                             <td><span class="label label-danger">Despesa</span></td>
                                             <td>54</td>
                                             <td>R$ 32,00</td>
                                             <td>R$ 1728,00</td>
-                                            <td>Máquina 4</td>
-                                            <td>Fiscal 3</td>
                                         </tr>
                                         <tr>
                                             <td>Nome fantasia 8</td>
+                                            <td>Máquina 1</td>
+                                            <td>Gerente - Usuário 1</td>
                                             <td><span class="label label-success">Receita</span></td>
                                             <td>68</td>
                                             <td>R$ 2,00</td>
                                             <td>R$ 136,00</td>
-                                            <td>Máquina 1</td>
-                                            <td>Fiscal 1</td>
                                         </tr>
                                     </tbody>
                                 </table>
