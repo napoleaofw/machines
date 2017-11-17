@@ -27,7 +27,6 @@ class Establishment extends Model
     protected $guarded = [
         'id',
         'fiscal_user_id',
-        'establishment_id',
         'created_by',
         'updated_by',
         'created_at',
@@ -42,7 +41,6 @@ class Establishment extends Model
     protected $hidden = [
         'id',
         'fiscal_user_id',
-        'establishment_id',
         'created_by',
         'updated_by',
         'created_at',

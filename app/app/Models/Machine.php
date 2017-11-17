@@ -25,6 +25,7 @@ class Machine extends Model
      */
     protected $guarded = [
         'id',
+        'establishment_id',
         'created_by',
         'updated_by',
         'created_at',
@@ -38,6 +39,7 @@ class Machine extends Model
      */
     protected $hidden = [
         'id',
+        'establishment_id',
         'created_by',
         'updated_by',
         'created_at',

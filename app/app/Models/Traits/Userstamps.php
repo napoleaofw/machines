@@ -2,7 +2,7 @@
 
 namespace App\Models\Traits;
 
-use App\Models\Traits\Userstamps;
+use App\Models\User;
 
 trait Userstamps
 {
@@ -11,7 +11,7 @@ trait Userstamps
      */
     public function createdBy()
     {
-        return $this->belongsTo(User:class, 'created_by');
+        return $this->belongsTo(User::class, 'created_by');
     }
 
     /**
@@ -19,6 +19,6 @@ trait Userstamps
      */
     public function updatedBy()
     {
-        return $this->belongsTo(User:class, 'updated_by');
+        return $this->belongsTo(User::class, 'updated_by');
     }
 }
