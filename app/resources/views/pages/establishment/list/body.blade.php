@@ -26,7 +26,7 @@
                                 <th>Telefone(s)</th>
                                 <th>E-mail</th>
                                 <th>Fiscal</th>
-                                <th>Percentual comissão</th>
+                                <th>Percentual de comissão</th>
                                 <th>Situação</th>
                             </tr>
                         </thead>
@@ -129,7 +129,7 @@
                                 <th>Telefone(s)</th>
                                 <th>E-mail</th>
                                 <th>Fiscal</th>
-                                <th>Percentual comissão</th>
+                                <th>Percentual de comissão</th>
                                 <th>Situação</th>
                             </tr>
                         </tfoot>

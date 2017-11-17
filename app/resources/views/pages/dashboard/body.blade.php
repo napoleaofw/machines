@@ -102,8 +102,8 @@
                                             <th>Máquina</th>
                                             <th>Usuário</th>
                                             <th>Tipo</th>
-                                            <th>Quantidade créditos</th>
-                                            <th>Valor crédito</th>
+                                            <th>Quantidade de créditos</th>
+                                            <th>Valor do crédito</th>
                                             <th>Valor total</th>
                                         </tr>
                                     </thead>
