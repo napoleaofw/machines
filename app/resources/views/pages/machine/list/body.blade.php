@@ -22,6 +22,7 @@
                                 <th>Código</th>
                                 <th>Nome</th>
                                 <th>Descrição</th>
+                                <th>Valor do crédito</th>
                                 <th>Observação</th>
                                 <th>Situação</th>
                             </tr>
@@ -31,6 +32,7 @@
                                 <td>0001</td>
                                 <td>Máquina 1</td>
                                 <td>Descrição da máquina 1...</td>
+                                <td>R$ 1655,98</td>
                                 <td>Observação da máquina 1...</td>
                                 <td>Ativo</td>
                             </tr>
@@ -38,6 +40,7 @@
                                 <td>0002</td>
                                 <td>Máquina 2</td>
                                 <td>Descrição da máquina 2...</td>
+                                <td>R$ 849,32</td>
                                 <td>Observação da máquina 2...</td>
                                 <td>Inativo</td>
                             </tr>
@@ -45,6 +48,7 @@
                                 <td>0003</td>
                                 <td>Máquina 3</td>
                                 <td>Descrição da máquina 3...</td>
+                                <td>R$ 684,88</td>
                                 <td>Observação da máquina 3...</td>
                                 <td>Ativo</td>
                             </tr>
@@ -52,6 +56,7 @@
                                 <td>0004</td>
                                 <td>Máquina 4</td>
                                 <td>Descrição da máquina 4...</td>
+                                <td>R$ 2988,45</td>
                                 <td>Observação da máquina 4...</td>
                                 <td>Inativo</td>
                             </tr>
@@ -59,6 +64,7 @@
                                 <td>0005</td>
                                 <td>Máquina 5</td>
                                 <td>Descrição da máquina 5...</td>
+                                <td>R$ 982,65</td>
                                 <td>Observação da máquina 5...</td>
                                 <td>Ativo</td>
                             </tr>
@@ -66,6 +72,7 @@
                                 <td>0006</td>
                                 <td>Máquina 6</td>
                                 <td>Descrição da máquina 6...</td>
+                                <td>R$ 184,62</td>
                                 <td>Observação da máquina 6...</td>
                                 <td>Inativo</td>
                             </tr>
@@ -73,6 +80,7 @@
                                 <td>0007</td>
                                 <td>Máquina 7</td>
                                 <td>Descrição da máquina 7...</td>
+                                <td>R$ 98,52</td>
                                 <td>Observação da máquina 7...</td>
                                 <td>Ativo</td>
                             </tr>
@@ -80,6 +88,7 @@
                                 <td>0008</td>
                                 <td>Máquina 8</td>
                                 <td>Descrição da máquina 8...</td>
+                                <td>R$ 287,64</td>
                                 <td>Observação da máquina 8...</td>
                                 <td>Inativo</td>
                             </tr>
@@ -89,6 +98,7 @@
                                 <th>Código</th>
                                 <th>Nome</th>
                                 <th>Descrição</th>
+                                <th>Valor do crédito</th>
                                 <th>Observação</th>
                                 <th>Situação</th>
                             </tr>
