@@ -20,6 +20,6 @@ $factory->define(Transaction::class, function (Faker $faker) {
         'credit_value' => $credit_value,
         'credit_amount' => $credit_amount,
         'total_amount' => $total_amount,
-        'observation' => $faker->paragraph
+        'observation' => $faker->optional($weight = 0.5)->paragraph
     ];
 });

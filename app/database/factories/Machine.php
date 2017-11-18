@@ -6,10 +6,10 @@ use App\Models\Machine;
 $factory->define(Machine::class, function (Faker $faker) {
     return [
         'code' => $faker->unique()->numberBetween(1000, 9999),
-        'name' => $faker->unique()->safeColorName, // unique only for appearance, not in database
+        'name' => $faker->jobTitle,
         'credit_value' => $faker->randomFloat(4, 1, 100),
-        'description' => $faker->paragraph,
-        'observation' => $faker->paragraph,
+        'description' => $faker->optional($weight = 0.2)->paragraph,
+        'observation' => $faker->optional($weight = 0.5)->paragraph,
         'status' => $faker->randomElement(['active', 'inactive'])
     ];
 });
