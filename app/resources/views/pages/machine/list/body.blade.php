@@ -25,6 +25,7 @@
                                 <th>Valor do crédito</th>
                                 <th>Observação</th>
                                 <th>Situação</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -35,6 +36,16 @@
                                 <td>R$ 1655,98</td>
                                 <td>Observação da máquina 1...</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>0002</td>
@@ -43,6 +54,16 @@
                                 <td>R$ 849,32</td>
                                 <td>Observação da máquina 2...</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>0003</td>
@@ -51,6 +72,16 @@
                                 <td>R$ 684,88</td>
                                 <td>Observação da máquina 3...</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>0004</td>
@@ -59,6 +90,16 @@
                                 <td>R$ 2988,45</td>
                                 <td>Observação da máquina 4...</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>0005</td>
@@ -67,6 +108,16 @@
                                 <td>R$ 982,65</td>
                                 <td>Observação da máquina 5...</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>0006</td>
@@ -75,6 +126,16 @@
                                 <td>R$ 184,62</td>
                                 <td>Observação da máquina 6...</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>0007</td>
@@ -83,6 +144,16 @@
                                 <td>R$ 98,52</td>
                                 <td>Observação da máquina 7...</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>0008</td>
@@ -91,6 +162,16 @@
                                 <td>R$ 287,64</td>
                                 <td>Observação da máquina 8...</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -101,6 +182,7 @@
                                 <th>Valor do crédito</th>
                                 <th>Observação</th>
                                 <th>Situação</th>
+                                <th></th>
                             </tr>
                         </tfoot>
                     </table>

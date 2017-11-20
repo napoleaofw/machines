@@ -27,6 +27,7 @@
                                 <th>Valor do crédito</th>
                                 <th>Valor total</th>
                                 <th>Data</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -39,6 +40,16 @@
                                 <td>R$ 15,00</td>
                                 <td>R$ 810,00</td>
                                 <td>31/10/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Estabelecimento 8</td>
@@ -49,6 +60,16 @@
                                 <td>R$ 6,00</td>
                                 <td>R$ 192,00</td>
                                 <td>26/10/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Estabelecimento 2</td>
@@ -59,6 +80,16 @@
                                 <td>R$ 86,00</td>
                                 <td>R$ 1290,00</td>
                                 <td>25/10/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Estabelecimento 5</td>
@@ -69,6 +100,16 @@
                                 <td>R$ 1,00</td>
                                 <td>R$ 26,00</td>
                                 <td>16/10/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Estabelecimento 7</td>
@@ -79,6 +120,16 @@
                                 <td>R$ 28,00</td>
                                 <td>R$ 700,00</td>
                                 <td>09/10/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Estabelecimento 2</td>
@@ -89,6 +140,16 @@
                                 <td>R$ 32,00</td>
                                 <td>R$ 1728,00</td>
                                 <td>28/09/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Estabelecimento 6</td>
@@ -99,6 +160,16 @@
                                 <td>R$ 2,00</td>
                                 <td>R$ 136,00</td>
                                 <td>14/09/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Estabelecimento 8</td>
@@ -109,6 +180,16 @@
                                 <td>R$ 68,00</td>
                                 <td>R$ 2584,00</td>
                                 <td>03/09/2017</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -121,6 +202,7 @@
                                 <th>Valor do crédito</th>
                                 <th>Valor total</th>
                                 <th>Data</th>
+                                <th></th>
                             </tr>
                         </tfoot>
                     </table>

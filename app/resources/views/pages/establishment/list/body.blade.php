@@ -28,6 +28,7 @@
                                 <th>Fiscal</th>
                                 <th>Percentual de comissão</th>
                                 <th>Situação</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,6 +42,16 @@
                                 <td>Fiscal 1</td>
                                 <td>3</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Razão social 2</td>
@@ -52,6 +63,16 @@
                                 <td>Fiscal 2</td>
                                 <td>5</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Razão social 3</td>
@@ -63,6 +84,16 @@
                                 <td>Fiscal 3</td>
                                 <td>2</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Razão social 4</td>
@@ -74,6 +105,16 @@
                                 <td>Fiscal 4</td>
                                 <td>3</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Razão social 5</td>
@@ -85,6 +126,16 @@
                                 <td>Fiscal 5</td>
                                 <td>5</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Razão social 6</td>
@@ -96,6 +147,16 @@
                                 <td>Fiscal 1</td>
                                 <td>4</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Razão social 7</td>
@@ -107,6 +168,16 @@
                                 <td>Fiscal 2</td>
                                 <td>3</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Razão social 8</td>
@@ -118,6 +189,16 @@
                                 <td>Fiscal 3</td>
                                 <td>4</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -131,6 +212,7 @@
                                 <th>Fiscal</th>
                                 <th>Percentual de comissão</th>
                                 <th>Situação</th>
+                                <th></th>
                             </tr>
                         </tfoot>
                     </table>

@@ -24,6 +24,7 @@
                                 <th>Nome</th>
                                 <th>E-mail</th>
                                 <th>Situação</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,6 +34,16 @@
                                 <td>Nome do usuário 1</td>
                                 <td>usuario1@hotmail.com</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Usuário 2</td>
@@ -40,6 +51,16 @@
                                 <td>Nome do usuário 2</td>
                                 <td>usuario2@hotmail.com</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Usuário 3</td>
@@ -47,6 +68,16 @@
                                 <td>Nome do usuário 3</td>
                                 <td>usuario3@hotmail.com</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Usuário 4</td>
@@ -54,6 +85,16 @@
                                 <td>Nome do usuário 4</td>
                                 <td>usuario4@hotmail.com</td>
                                 <td>Inativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Usuário 5</td>
@@ -61,6 +102,16 @@
                                 <td>Nome do usuário 5</td>
                                 <td>usuario5@hotmail.com</td>
                                 <td>Ativo</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -70,6 +121,7 @@
                                 <th>Nome</th>
                                 <th>E-mail</th>
                                 <th>Situação</th>
+                                <th></th>
                             </tr>
                         </tfoot>
                     </table>
