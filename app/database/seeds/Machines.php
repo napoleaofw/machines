@@ -5,6 +5,7 @@ use App\Models\Establishment;
 use App\Models\Machine;
 use App\Models\Transaction;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class Machines extends Seeder
 {
@@ -17,42 +18,57 @@ class Machines extends Seeder
     {
         // gc_collect_cycles();
 
+        $this->command->info("Truncating tables...");
+
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('TRANSACTION_TBL')->truncate();
         DB::table('MACHINE_TBL')->truncate();
         DB::table('ESTABLISHMENT_TBL')->truncate();
         DB::table('USER_TBL')->truncate();
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');        
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+        
+        $this->command->info("Truncating tables: done.");
 
-        $system = factory(User::class)->make([
+        $system = factory(User::class)->create([
             'username' => 'system',
             'name' => 'System',
             'password' => bcrypt('system')
         ]);
 
-        factory(User::class, rand(5, 20))->create()->each(function($user) use ($system) {
-            $user->created_by = $system->id;
-            $user->updated_by = $system->id;
-            $user->save();
-            factory(Establishment::class, rand(5, 20))->create()->each(function($establishment) use ($user) {
-                $establishment->fiscal_user_id = rand(1,3) % 2 === 0 ? $user_id : null; // optional and "any fiscal user"
-                $establishment->created_by = $user->id;
-                $establishment->updated_by = $user->id;
-                $establishment->save();
-                factory(Machine::class, rand(5, 20))->create()->each(function($machine) use ($user, $establishment) {
-                    $machine->establishment_id = rand(1,2) % 2 === 0 ? $establishment->id : null; // optional
-                    $machine->created_by = $user->id;
-                    $machine->updated_by = $user->id;
-                    $machine->save();
-                    factory(Transaction::class, rand(5, 20))->create()->each(function($transaction) use ($user, $establishment, $machine) {
-                        $transaction->establishment_id = $establishment->id;
-                        $transaction->machine_id = $machine->id;
-                        $transaction->created_by = $user->id;
-                        $transaction->updated_by = $user->id;
-                        $transaction->save();
-                    });
-                });
-            });
-        });
+        $this->command->info("System user created: {$system}");
+
+        $this->command->info("Attempting to login...");
+
+        Auth::login($system);
+
+        if(Auth::check()) {
+            $this->command->info("Login success :)");
+
+            $recordsUser = factory(User::class, rand(5, 20))->create();
+
+            foreach($recordsUser as $recordUser) {
+                $recordsEstablishment = $recordUser->establishments()->saveMany(factory(Establishment::class, rand(5, 20))->make());
+
+                foreach($recordsEstablishment as $recordEstablishment) {
+                    $recordEstablishment->fiscal_user_id = rand(1,3) % 2 === 0 ?: null; // optional and "any fiscal user"
+                    $recordEstablishment->save();
+                    $recordsMachine = $recordEstablishment->machines()->saveMany(factory(Machine::class, rand(5, 20))->make());
+
+                    foreach($recordsMachine as $recordMachine) {
+                        $recordMachine->establishment_id = rand(1,3) % 2 === 0 ?: null; // optional
+                        $recordMachine->save();
+
+                        $recordsTransaction = $recordMachine->transactions()->saveMany(factory(Transaction::class, rand(5, 20))->make([
+                            'establishment_id' => $recordEstablishment->id
+                        ]));
+                    }
+                }
+            }
+        }
+        else {
+            $this->command->info("Login failed :(");
+        }
+
+        $this->command->info("Seeding: done.");
     }
 }

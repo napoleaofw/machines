@@ -5,7 +5,7 @@ use App\Models\Establishment;
 
 $factory->define(Establishment::class, function (Faker $faker) {
     return [
-        'corporate_name' => $faker->unique()->optional($weight = 0.1)->company,
+        'corporate_name' => $faker->unique()->company,
         'trade_name' => $faker->unique()->company,
         'responsible' => $faker->optional($weight = 0.2)->name,
         'address' => $faker->streetAddress . ' - ' . $faker->city . '/' . $faker->stateAbbr,
