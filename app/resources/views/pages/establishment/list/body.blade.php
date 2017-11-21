@@ -19,11 +19,8 @@
                     <table id="table-establishment" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Razão social</th>
                                 <th>Nome fantasia</th>
                                 <th>Responsável</th>
-                                <th>Endereço</th>
-                                <th>Telefone(s)</th>
                                 <th>E-mail</th>
                                 <th>Fiscal</th>
                                 <th>Percentual de comissão</th>
@@ -33,181 +30,138 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Razão social 1</td>
                                 <td>Nome fantasia 1</td>
                                 <td>Responsável 1</td>
-                                <td>Rua do estabelecimento, 101 - Centro</td>
-                                <td>(11) 91111-1111, (11) 91111-1111</td>
                                 <td>estabelecimento1@hotmail.com</td>
                                 <td>Fiscal 1</td>
                                 <td>3</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Razão social 2</td>
                                 <td>Nome fantasia 2</td>
                                 <td>Responsável 2</td>
-                                <td>Rua do estabelecimento, 102 - Centro</td>
-                                <td>(11) 92222-2222, (11) 92222-2222</td>
                                 <td>estabelecimento2@hotmail.com</td>
                                 <td>Fiscal 2</td>
                                 <td>5</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Razão social 3</td>
                                 <td>Nome fantasia 3</td>
                                 <td>Responsável 3</td>
-                                <td>Rua do estabelecimento, 103 - Centro</td>
-                                <td>(11) 93333-3333, (11) 93333-3333</td>
                                 <td>estabelecimento3@hotmail.com</td>
                                 <td>Fiscal 3</td>
                                 <td>2</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Razão social 4</td>
                                 <td>Nome fantasia 4</td>
                                 <td>Responsável 4</td>
-                                <td>Rua do estabelecimento, 104 - Centro</td>
-                                <td>(11) 94444-4444, (11) 94444-4444</td>
                                 <td>estabelecimento4@hotmail.com</td>
                                 <td>Fiscal 4</td>
                                 <td>3</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Razão social 5</td>
                                 <td>Nome fantasia 5</td>
                                 <td>Responsável 5</td>
-                                <td>Rua do estabelecimento, 105 - Centro</td>
-                                <td>(11) 95555-5555, (11) 95555-5555</td>
                                 <td>estabelecimento5@hotmail.com</td>
                                 <td>Fiscal 5</td>
                                 <td>5</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Razão social 6</td>
                                 <td>Nome fantasia 6</td>
                                 <td>Responsável 6</td>
-                                <td>Rua do estabelecimento, 106 - Centro</td>
-                                <td>(11) 96666-6666, (11) 96666-6666</td>
                                 <td>estabelecimento6@hotmail.com</td>
                                 <td>Fiscal 1</td>
                                 <td>4</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Razão social 7</td>
                                 <td>Nome fantasia 7</td>
                                 <td>Responsável 7</td>
-                                <td>Rua do estabelecimento, 107 - Centro</td>
-                                <td>(11) 97777-7777, (11) 97777-7777</td>
                                 <td>estabelecimento7@hotmail.com</td>
                                 <td>Fiscal 2</td>
                                 <td>3</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Razão social 8</td>
                                 <td>Nome fantasia 8</td>
                                 <td>Responsável 8</td>
-                                <td>Rua do estabelecimento, 108 - Centro</td>
-                                <td>(11) 98888-8888, (11) 98888-8888</td>
                                 <td>estabelecimento8@hotmail.com</td>
                                 <td>Fiscal 3</td>
                                 <td>4</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Razão social</th>
                                 <th>Nome fantasia</th>
                                 <th>Responsável</th>
-                                <th>Endereço</th>
-                                <th>Telefone(s)</th>
                                 <th>E-mail</th>
                                 <th>Fiscal</th>
                                 <th>Percentual de comissão</th>

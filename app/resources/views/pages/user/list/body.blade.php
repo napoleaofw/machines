@@ -35,14 +35,12 @@
                                 <td>usuario1@hotmail.com</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -52,14 +50,12 @@
                                 <td>usuario2@hotmail.com</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -69,14 +65,12 @@
                                 <td>usuario3@hotmail.com</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -86,14 +80,12 @@
                                 <td>usuario4@hotmail.com</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -103,14 +95,12 @@
                                 <td>usuario5@hotmail.com</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>

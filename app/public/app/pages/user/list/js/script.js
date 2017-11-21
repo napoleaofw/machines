@@ -2,7 +2,8 @@ $(document).ready(function() {
     $('#table-user').dataTable({
         columnDefs: [{
             orderable: false,
-            targets: -1
+            targets: -1,
+            width: 80
         }],
         language: {
             sEmptyTable: 'Nenhum registro encontrado',

@@ -37,14 +37,12 @@
                                 <td>Observação da máquina 1...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -55,14 +53,12 @@
                                 <td>Observação da máquina 2...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -73,14 +69,12 @@
                                 <td>Observação da máquina 3...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -91,14 +85,12 @@
                                 <td>Observação da máquina 4...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -109,14 +101,12 @@
                                 <td>Observação da máquina 5...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -127,14 +117,12 @@
                                 <td>Observação da máquina 6...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -145,14 +133,12 @@
                                 <td>Observação da máquina 7...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -163,14 +149,12 @@
                                 <td>Observação da máquina 8...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>

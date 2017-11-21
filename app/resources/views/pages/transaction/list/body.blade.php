@@ -11,9 +11,9 @@
         <section class="content">
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <div class="pull-right">
+                    <!-- <div class="pull-right">
                         <a href="/transaction/register" class="btn btn-primary"><i class="fa fa-plus"></i> Nova transação</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="box-body table-responsive">
                     <table id="table-establishment" class="table table-bordered table-striped">
@@ -41,14 +41,12 @@
                                 <td>R$ 810,00</td>
                                 <td>31/10/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -61,14 +59,12 @@
                                 <td>R$ 192,00</td>
                                 <td>26/10/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -81,14 +77,12 @@
                                 <td>R$ 1290,00</td>
                                 <td>25/10/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -101,14 +95,12 @@
                                 <td>R$ 26,00</td>
                                 <td>16/10/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -121,14 +113,12 @@
                                 <td>R$ 700,00</td>
                                 <td>09/10/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -141,14 +131,12 @@
                                 <td>R$ 1728,00</td>
                                 <td>28/09/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -161,14 +149,12 @@
                                 <td>R$ 136,00</td>
                                 <td>14/09/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -181,14 +167,12 @@
                                 <td>R$ 2584,00</td>
                                 <td>03/09/2017</td>
                                 <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-primary btn-flat btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-flat btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                        </a>
-                                    </div>
+                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>

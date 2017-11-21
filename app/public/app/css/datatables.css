@@ -1,0 +1,3 @@
+.app .table-responsive table tbody tr td:last-child {
+    text-align: center;
+}
