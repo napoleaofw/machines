@@ -101,6 +101,10 @@
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
+                                    <label>E-mail</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
                                     <label>Fiscal</label>
                                     <select class="form-control">
                                         <option value="">Selecione</option>

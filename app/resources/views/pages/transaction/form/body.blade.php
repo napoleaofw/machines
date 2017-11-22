@@ -40,6 +40,10 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
+                                    <label>Percentual de comissão</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
                                     <label>Observação</label>
                                     <textarea class="form-control"></textarea>
                                 </div>

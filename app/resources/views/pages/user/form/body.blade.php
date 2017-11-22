@@ -18,7 +18,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Usuário</label>
+                                    <label>Nome de usuário</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
