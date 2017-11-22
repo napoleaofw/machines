@@ -18,21 +18,18 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Código</label>
-                                    <input type="text" class="form-control">
+                                    <label>Estabelecimento</label>
+                                    <select class="form-control">
+                                        <option value="">Selecione</option>
+                                        <option value="estabelecimento1">Estabelecimento 1</option>
+                                        <option value="estabelecimento2">Estabelecimento 2</option>
+                                        <option value="estabelecimento3">Estabelecimento 3</option>
+                                        <option value="estabelecimento4">Estabelecimento 4</option>
+                                        <option value="estabelecimento5">Estabelecimento 5</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Descrição</label>
-                                    <textarea class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Valor do crédito</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
@@ -42,6 +39,20 @@
                                         <option value="active">Ativo</option>
                                         <option value="inactive">Inativo</option>
                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Descrição</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Código</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Valor do crédito</label>
+                                    <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Observação</label>
