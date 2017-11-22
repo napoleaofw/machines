@@ -28,6 +28,26 @@
                     <i class="fa fa-user"></i> <span>Usuários</span>
                 </a>
             </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-file-text-o"></i> <span>Relatórios</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/reports/establishment">
+                            <i class="fa fa-sticky-note-o"></i> <span>Resumido por estabelecimento</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/reports/fiscal">
+                            <i class="fa fa-sticky-note-o"></i> <span>Resumido por fiscal</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </section>
 </aside>
