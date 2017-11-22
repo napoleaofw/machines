@@ -1,0 +1,1 @@
+<script type="text/javascript" src="{{ url('/app/reports/fiscal/js/script.js') }}"></script>

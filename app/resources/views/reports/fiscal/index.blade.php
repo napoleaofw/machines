@@ -2,17 +2,17 @@
 <html lang="pt-br">
     <head>
         @include('head')
-        @include('pages.establishment.form.head')
+        @include('reports.fiscal.head')
         @include('style')
         @include('components.header.style')
         @include('components.sidebar.style')
-        @include('pages.establishment.form.style')
+        @include('reports.fiscal.style')
     </head>
     <body class="app skin-black-light sidebar-mini">
-        @include('pages.establishment.form.body')
+        @include('reports.fiscal.body')
         @include('script')
         @include('components.header.script')
         @include('components.sidebar.script')
-        @include('pages.establishment.form.script')
+        @include('reports.fiscal.script')
     </body>
 </html>

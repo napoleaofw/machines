@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        @include('pages.head')
+        @include('head')
         @include('pages.login.head')
-        @include('pages.style')
+        @include('style')
         @include('pages.login.style')
     </head>
     <body class="app login-page">
         @include('pages.login.body')
-        @include('pages.script')
+        @include('script')
         @include('pages.login.script')
     </body>
 </html>

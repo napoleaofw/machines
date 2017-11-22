@@ -12,6 +12,9 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <h3 class="box-title">Dados do usuário</h3>
+                    <div class="pull-right">
+                        <a href="#" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
+                    </div>
                 </div>
                 <div class="box-body">
                     <form role="form">

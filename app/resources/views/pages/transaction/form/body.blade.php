@@ -40,8 +40,16 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Percentual de comissão</label>
+                                    <label>Quantidade de créditos</label>
                                     <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Percentual de comissão</label>
+                                    <input type="text" class="form-control" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Valor total dos créditos</label>
+                                    <input type="text" class="form-control" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label>Observação</label>
@@ -58,12 +66,20 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Quantidade de créditos</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
                                     <label>Data</label>
                                     <input type="text" class="form-control input-date">
+                                </div>
+                                <div class="form-group">
+                                    <label>Valor do crédito</label>
+                                    <input type="text" class="form-control" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Valor da comissão</label>
+                                    <input type="text" class="form-control" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Valor total</label>
+                                    <input type="text" class="form-control" disabled>
                                 </div>
                             </div>
                         </div>
