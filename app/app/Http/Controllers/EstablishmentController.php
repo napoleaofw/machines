@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Establishment as EstablishmentModel;
+use App\Models\Machine as MachineModel;
+use App\Models\Transaction as TransactionModel;
 use App\Models\User as UserModel;
 
 class EstablishmentController extends Controller
@@ -68,6 +70,9 @@ class EstablishmentController extends Controller
     {
         //
         $recordEstablishment = EstablishmentModel::findOrFail($id);
+        $recordsEstablishment = EstablishmentModel::all();
+        $recordsMachine = MachineModel::all();
+        $recordTransaction = new TransactionModel();
         $recordsUser = UserModel::where('type', 'fiscal')->get();
         
         $data = [
@@ -76,6 +81,9 @@ class EstablishmentController extends Controller
                 'status' => 'showing'
             ],
             'recordEstablishment' => $recordEstablishment,
+            'recordsEstablishment' => $recordsEstablishment,
+            'recordsMachine' => $recordsMachine,
+            'recordTransaction' => $recordTransaction,
             'recordsUser' => $recordsUser
         ];
         return view('pages.establishment.form.index', $data);

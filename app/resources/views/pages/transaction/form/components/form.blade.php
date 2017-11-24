@@ -61,7 +61,7 @@
                 <label>Valor total</label>
                 <input type="text" class="form-control" value="{{ $recordTransaction->total_amount }}" disabled>
             </div>
-        @if($record['status'] != 'creating')
+        @if($record['status'] != 'creating' && $recordTransaction->id)
             <div class="form-group">
                 <label>Usuário</label>
                 <select class="form-control" disabled>
