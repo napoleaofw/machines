@@ -13,12 +13,14 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Dados do usuário</h3>
                     <div class="pull-right">
-                    @if($record['status'] == 'showing')
-                        <a href="{{ route('users.edit', 1) }}" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
-                    @else
+                @if($record['status'] == 'showing')
+                        <a href="{{ route('users.edit', $recordUser->id) }}" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
+                @else
+                    @if($record['status'] == 'editing')
                         <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
                     @endif
+                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
+                @endif
                     </div>
                 </div>
                 <div class="box-body">
@@ -27,7 +29,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nome de usuário</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordUser->username }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
@@ -37,26 +39,26 @@
                                     <label>Tipo</label>
                                     <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
-                                        <option value="fiscal">Fiscal</option>
-                                        <option value="gerente">Gerente</option>
+                                        <option value="fiscal" {{ $recordUser->type == 'fiscal' ? 'selected': null }}>Fiscal</option>
+                                        <option value="administrator" {{ $recordUser->type == 'administrator' ? 'selected' : null }}>Gerente</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordUser->name }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>E-mail</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordUser->email }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Situação</label>
                                     <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
-                                        <option value="active">Ativo</option>
-                                        <option value="inactive">Inativo</option>
+                                        <option value="active" {{ $recordUser->status == 'active' ? 'selected': null }}>Ativo</option>
+                                        <option value="inactive" {{ $recordUser->status == 'inactive' ? 'selected': null }}>Inativo</option>
                                     </select>
                                 </div>
                             </div>

@@ -2,16 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use App\Models\Traits\Userstamps;
 use App\Models\Machine;
 use App\Models\Transaction;
 use App\Models\User;
 
-class Establishment extends Model
+class Establishment extends AppModel
 {
-    use Userstamps;
-
     /**
      * The table associated with the model.
      *

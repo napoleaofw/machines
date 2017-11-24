@@ -2,17 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Models\Traits\Userstamps;
 use App\Models\Establishment;
 use App\Models\Machine;
 use App\Models\Transaction;
 
-class User extends Authenticatable
+class User extends AuthModel
 {
-    use Notifiable, Userstamps;
-
     /**
      * The table associated with the model.
      *

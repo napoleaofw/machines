@@ -32,18 +32,19 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($recordsTransaction as $recordTransaction)
                             <tr>
-                                <td>Estabelecimento 1</td>
-                                <td>Máquina 3</td>
-                                <td>Gerente - Usuário 1</td>
-                                <td><span class="label label-success">Receita</span></td>
-                                <td>54</td>
-                                <td>R$ 15,00</td>
-                                <td>R$ 81,00</td>
-                                <td>R$ 810,00</td>
-                                <td>31/10/2017</td>
+                                <td>{{ $recordTransaction->establishment ? $recordTransaction->establishment->trade_name : null }}</td>
+                                <td>{{ $recordTransaction->machine ? $recordTransaction->machine->name : null }}</td>
+                                <td>{{ $recordTransaction->createdBy ? $recordTransaction->createdBy->name : null }}</td>
+                                <td><span class="label {{ $recordTransaction->type == 'revenue' ? 'label-success' : 'label-danger' }}">{{ $recordTransaction->type == 'revenue' ? 'Receita' : 'Despesa' }}</span></td>
+                                <td>{{ $recordTransaction->credit_quantity }}</td>
+                                <td>R$ {{ $recordTransaction->credit_value }}</td>
+                                <td>R$ {{ $recordTransaction->commission_value }}</td>
+                                <td>R$ {{ $recordTransaction->total_amount }}</td>
+                                <td>{{ $recordTransaction->date }}</td>
                                 <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                    <a href="{{ route('transactions.show', $recordTransaction->id) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
                                         <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
@@ -51,139 +52,7 @@
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>Estabelecimento 8</td>
-                                <td>Máquina 5</td>
-                                <td>Gerente - Usuário 1</td>
-                                <td><span class="label label-info">Fechamento</span></td>
-                                <td>32</td>
-                                <td>R$ 6,00</td>
-                                <td>R$ 19,20</td>
-                                <td>R$ 192,00</td>
-                                <td>26/10/2017</td>
-                                <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Estabelecimento 2</td>
-                                <td>Máquina 1</td>
-                                <td>Fiscal - Usuário 4</td>
-                                <td><span class="label label-success">Receita</span></td>
-                                <td>15</td>
-                                <td>R$ 86,00</td>
-                                <td>R$ 129,00</td>
-                                <td>R$ 1290,00</td>
-                                <td>25/10/2017</td>
-                                <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Estabelecimento 5</td>
-                                <td>Máquina 4</td>
-                                <td>Fiscal - Usuário 7</td>
-                                <td><span class="label label-success">Receita</span></td>
-                                <td>26</td>
-                                <td>R$ 1,00</td>
-                                <td>R$ 2,60</td>
-                                <td>R$ 26,00</td>
-                                <td>16/10/2017</td>
-                                <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Estabelecimento 7</td>
-                                <td>Máquina 8</td>
-                                <td>Fiscal - Usuário 2</td>
-                                <td><span class="label label-success">Receita</span></td>
-                                <td>25</td>
-                                <td>R$ 28,00</td>
-                                <td>R$ 70,00</td>
-                                <td>R$ 700,00</td>
-                                <td>09/10/2017</td>
-                                <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Estabelecimento 2</td>
-                                <td>Máquina 2</td>
-                                <td>Gerente - Usuário 1</td>
-                                <td><span class="label label-danger">Despesa</span></td>
-                                <td>54</td>
-                                <td>R$ 32,00</td>
-                                <td>R$ 172,80</td>
-                                <td>R$ 1728,00</td>
-                                <td>28/09/2017</td>
-                                <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Estabelecimento 6</td>
-                                <td>Máquina 6</td>
-                                <td>Fiscal - Usuário 4</td>
-                                <td><span class="label label-success">Receita</span></td>
-                                <td>68</td>
-                                <td>R$ 2,00</td>
-                                <td>R$ 13,60</td>
-                                <td>R$ 136,00</td>
-                                <td>14/09/2017</td>
-                                <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Estabelecimento 8</td>
-                                <td>Máquina 7</td>
-                                <td>Fiscal - Usuário 8</td>
-                                <td><span class="label label-danger">Despesa</span></td>
-                                <td>38</td>
-                                <td>R$ 68,00</td>
-                                <td>R$ 258,40</td>
-                                <td>R$ 2584,00</td>
-                                <td>03/09/2017</td>
-                                <td>
-                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                        @endforeach
                         </tbody>
                         <tfoot>
                             <tr>

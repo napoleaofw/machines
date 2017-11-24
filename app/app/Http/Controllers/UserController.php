@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User as UserModel;
 
 class UserController extends Controller
 {
@@ -14,7 +15,12 @@ class UserController extends Controller
     public function index()
     {
         //
-        return view('pages.user.list.index');
+        $recordsUser = UserModel::all();
+
+        $data = [
+            'recordsUser' => $recordsUser
+        ];
+        return view('pages.user.list.index', $data);
     }
 
     /**
@@ -25,12 +31,15 @@ class UserController extends Controller
     public function create()
     {
         //
+        $recordUser = new UserModel();
+
         $disabled = 'init';
         $data = [
             'record' => [
                 'disabled' => $disabled,
                 'status' => 'creating'
-            ]
+            ],
+            'recordUser' => $recordUser
         ];
         return view('pages.user.form.index', $data);
     }
@@ -55,11 +64,14 @@ class UserController extends Controller
     public function show($id)
     {
         //
+        $recordUser = UserModel::findOrFail($id);
+
         $data = [
             'record' => [
                 'disabled' => 'disabled',
                 'status' => 'showing'
-            ]
+            ],
+            'recordUser' => $recordUser
         ];
         return view('pages.user.form.index', $data);
     }
@@ -73,11 +85,14 @@ class UserController extends Controller
     public function edit($id)
     {
         //
+        $recordUser = UserModel::findOrFail($id);
+        
         $data = [
             'record' => [
                 'disabled' => null,
                 'status' => 'editing'
-            ]
+            ],
+            'recordUser' => $recordUser
         ];
         return view('pages.user.form.index', $data);
     }

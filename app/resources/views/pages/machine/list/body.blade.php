@@ -29,15 +29,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($recordsMachine as $recordMachine)
                             <tr>
-                                <td>0001</td>
-                                <td>Máquina 1</td>
-                                <td>Descrição da máquina 1...</td>
-                                <td>R$ 1655,98</td>
-                                <td>Observação da máquina 1...</td>
-                                <td>Ativo</td>
+                                <td>{{ $recordMachine->code }}</td>
+                                <td>{{ $recordMachine->name }}</td>
+                                <td>{{ $recordMachine->description }}</td>
+                                <td>R$ {{ $recordMachine->credit_value }}</td>
+                                <td>{{ $recordMachine->observation }}</td>
+                                <td>{{ $recordMachine->status == 'active' ? 'Ativo' : 'Inativo' }}</td>
                                 <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                    <a href="{{ route('machines.show', $recordMachine->id) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
                                         <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
@@ -45,118 +46,7 @@
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>0002</td>
-                                <td>Máquina 2</td>
-                                <td>Descrição da máquina 2...</td>
-                                <td>R$ 849,32</td>
-                                <td>Observação da máquina 2...</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0003</td>
-                                <td>Máquina 3</td>
-                                <td>Descrição da máquina 3...</td>
-                                <td>R$ 684,88</td>
-                                <td>Observação da máquina 3...</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0004</td>
-                                <td>Máquina 4</td>
-                                <td>Descrição da máquina 4...</td>
-                                <td>R$ 2988,45</td>
-                                <td>Observação da máquina 4...</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0005</td>
-                                <td>Máquina 5</td>
-                                <td>Descrição da máquina 5...</td>
-                                <td>R$ 982,65</td>
-                                <td>Observação da máquina 5...</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0006</td>
-                                <td>Máquina 6</td>
-                                <td>Descrição da máquina 6...</td>
-                                <td>R$ 184,62</td>
-                                <td>Observação da máquina 6...</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0007</td>
-                                <td>Máquina 7</td>
-                                <td>Descrição da máquina 7...</td>
-                                <td>R$ 98,52</td>
-                                <td>Observação da máquina 7...</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0008</td>
-                                <td>Máquina 8</td>
-                                <td>Descrição da máquina 8...</td>
-                                <td>R$ 287,64</td>
-                                <td>Observação da máquina 8...</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                        @endforeach
                         </tbody>
                         <tfoot>
                             <tr>

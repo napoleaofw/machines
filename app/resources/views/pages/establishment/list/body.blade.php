@@ -29,15 +29,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($recordsEstablishment as $recordEstablishment)
                             <tr>
-                                <td>Nome fantasia 1</td>
-                                <td>Responsável 1</td>
-                                <td>estabelecimento1@hotmail.com</td>
-                                <td>Fiscal 1</td>
-                                <td>3</td>
-                                <td>Ativo</td>
+                                <td>{{ $recordEstablishment->trade_name }}</td>
+                                <td>{{ $recordEstablishment->responsible }}</td>
+                                <td>{{ $recordEstablishment->email }}</td>
+                                <td>{{ $recordEstablishment->fiscal ? $recordEstablishment->fiscal->name : null }}</td>
+                                <td>{{ $recordEstablishment->commission_percentage }}</td>
+                                <td>{{ $recordEstablishment->status == 'active' ? 'Ativo' : 'Inativo' }}</td>
                                 <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                    <a href="{{ route('establishments.show', $recordEstablishment->id) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
                                         <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
@@ -45,118 +46,7 @@
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>Nome fantasia 2</td>
-                                <td>Responsável 2</td>
-                                <td>estabelecimento2@hotmail.com</td>
-                                <td>Fiscal 2</td>
-                                <td>5</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nome fantasia 3</td>
-                                <td>Responsável 3</td>
-                                <td>estabelecimento3@hotmail.com</td>
-                                <td>Fiscal 3</td>
-                                <td>2</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nome fantasia 4</td>
-                                <td>Responsável 4</td>
-                                <td>estabelecimento4@hotmail.com</td>
-                                <td>Fiscal 4</td>
-                                <td>3</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nome fantasia 5</td>
-                                <td>Responsável 5</td>
-                                <td>estabelecimento5@hotmail.com</td>
-                                <td>Fiscal 5</td>
-                                <td>5</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nome fantasia 6</td>
-                                <td>Responsável 6</td>
-                                <td>estabelecimento6@hotmail.com</td>
-                                <td>Fiscal 1</td>
-                                <td>4</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nome fantasia 7</td>
-                                <td>Responsável 7</td>
-                                <td>estabelecimento7@hotmail.com</td>
-                                <td>Fiscal 2</td>
-                                <td>3</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nome fantasia 8</td>
-                                <td>Responsável 8</td>
-                                <td>estabelecimento8@hotmail.com</td>
-                                <td>Fiscal 3</td>
-                                <td>4</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                        @endforeach
                         </tbody>
                         <tfoot>
                             <tr>

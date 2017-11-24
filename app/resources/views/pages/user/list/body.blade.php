@@ -28,14 +28,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($recordsUser as $recordUser)
                             <tr>
-                                <td>Usuário 1</td>
-                                <td>Gerente</td>
-                                <td>Nome do usuário 1</td>
-                                <td>usuario1@hotmail.com</td>
-                                <td>Ativo</td>
+                                <td>{{ $recordUser->username }}</td>
+                                <td>{{ $recordUser->type == 'administrator' ? 'Gerente' : 'Fiscal' }}</td>
+                                <td>{{ $recordUser->name }}</td>
+                                <td>{{ $recordUser->email }}</td>
+                                <td>{{ $recordUser->status == 'active' ? 'Ativo' : 'Inativo' }}</td>
                                 <td>
-                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                    <a href="{{ route('users.show', $recordUser->id) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
                                         <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
@@ -43,66 +44,7 @@
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>Usuário 2</td>
-                                <td>Fiscal</td>
-                                <td>Nome do usuário 2</td>
-                                <td>usuario2@hotmail.com</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Usuário 3</td>
-                                <td>Fiscal</td>
-                                <td>Nome do usuário 3</td>
-                                <td>usuario3@hotmail.com</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Usuário 4</td>
-                                <td>Fiscal</td>
-                                <td>Nome do usuário 4</td>
-                                <td>usuario4@hotmail.com</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Usuário 5</td>
-                                <td>Fiscal</td>
-                                <td>Nome do usuário 5</td>
-                                <td>usuario5@hotmail.com</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                        @endforeach
                         </tbody>
                         <tfoot>
                             <tr>

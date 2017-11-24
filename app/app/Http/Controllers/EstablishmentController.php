@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Establishment as EstablishmentModel;
+use App\Models\User as UserModel;
 
 class EstablishmentController extends Controller
 {
@@ -14,7 +16,12 @@ class EstablishmentController extends Controller
     public function index()
     {
         //
-        return view('pages.establishment.list.index');
+        $recordsEstablishment = EstablishmentModel::all();
+
+        $data = [
+            'recordsEstablishment' => $recordsEstablishment
+        ];
+        return view('pages.establishment.list.index', $data);
     }
 
     /**
@@ -25,12 +32,17 @@ class EstablishmentController extends Controller
     public function create()
     {
         //
+        $recordEstablishment = new EstablishmentModel();
+        $recordsUser = UserModel::where('type', 'fiscal')->get();
+
         $disabled = 'init';
         $data = [
             'record' => [
                 'disabled' => $disabled,
                 'status' => 'creating'
-            ]
+            ],
+            'recordEstablishment' => $recordEstablishment,
+            'recordsUser' => $recordsUser
         ];
         return view('pages.establishment.form.index', $data);
     }
@@ -55,11 +67,16 @@ class EstablishmentController extends Controller
     public function show($id)
     {
         //
+        $recordEstablishment = EstablishmentModel::findOrFail($id);
+        $recordsUser = UserModel::where('type', 'fiscal')->get();
+        
         $data = [
             'record' => [
                 'disabled' => 'disabled',
                 'status' => 'showing'
-            ]
+            ],
+            'recordEstablishment' => $recordEstablishment,
+            'recordsUser' => $recordsUser
         ];
         return view('pages.establishment.form.index', $data);
     }
@@ -73,11 +90,16 @@ class EstablishmentController extends Controller
     public function edit($id)
     {
         //
+        $recordEstablishment = EstablishmentModel::findOrFail($id);
+        $recordsUser = UserModel::where('type', 'fiscal')->get();
+        
         $data = [
             'record' => [
                 'disabled' => null,
                 'status' => 'editing'
-            ]
+            ],
+            'recordEstablishment' => $recordEstablishment,
+            'recordsUser' => $recordsUser
         ];
         return view('pages.establishment.form.index', $data);
     }

@@ -22,10 +22,10 @@
                             </li>
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="/user/register" class="btn btn-default btn-flat">Perfil</a>
+                                    <a href="{{ route('users.show', 1) }}" class="btn btn-default btn-flat">Perfil</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="/login" class="btn btn-default btn-flat">Sair</a>
+                                    <a href="{{ route('login') }}" class="btn btn-default btn-flat">Sair</a>
                                 </div>
                             </li>
                     </ul>

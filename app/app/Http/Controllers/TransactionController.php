@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Establishment as EstablishmentModel;
+use App\Models\Machine as MachineModel;
+use App\Models\Transaction as TransactionModel;
 
 class TransactionController extends Controller
 {
@@ -14,7 +17,12 @@ class TransactionController extends Controller
     public function index()
     {
         //
-        return view('pages.transaction.list.index');
+        $recordsTransaction = TransactionModel::all();
+
+        $data = [
+            'recordsTransaction' => $recordsTransaction
+        ];
+        return view('pages.transaction.list.index', $data);
     }
 
     /**
@@ -25,12 +33,19 @@ class TransactionController extends Controller
     public function create()
     {
         //
+        $recordTransaction = new TransactionModel();
+        $recordsEstablishment = EstablishmentModel::all();
+        $recordsMachine = MachineModel::all();
+        
         $disabled = 'init';
         $data = [
             'record' => [
                 'disabled' => $disabled,
                 'status' => 'creating'
-            ]
+            ],
+            'recordTransaction' => $recordTransaction,
+            'recordsEstablishment' => $recordsEstablishment,
+            'recordsMachine' => $recordsMachine
         ];
         return view('pages.transaction.form.index', $data);
     }
@@ -55,11 +70,18 @@ class TransactionController extends Controller
     public function show($id)
     {
         //
+        $recordTransaction = TransactionModel::findOrFail($id);
+        $recordsEstablishment = EstablishmentModel::all();
+        $recordsMachine = MachineModel::all();
+        
         $data = [
             'record' => [
                 'disabled' => 'disabled',
                 'status' => 'showing'
-            ]
+            ],
+            'recordTransaction' => $recordTransaction,
+            'recordsEstablishment' => $recordsEstablishment,
+            'recordsMachine' => $recordsMachine
         ];
         return view('pages.transaction.form.index', $data);
     }
@@ -73,11 +95,18 @@ class TransactionController extends Controller
     public function edit($id)
     {
         //
+        $recordTransaction = TransactionModel::findOrFail($id);
+        $recordsEstablishment = EstablishmentModel::all();
+        $recordsMachine = MachineModel::all();
+        
         $data = [
             'record' => [
                 'disabled' => null,
                 'status' => 'editing'
-            ]
+            ],
+            'recordTransaction' => $recordTransaction,
+            'recordsEstablishment' => $recordsEstablishment,
+            'recordsMachine' => $recordsMachine
         ];
         return view('pages.transaction.form.index', $data);
     }

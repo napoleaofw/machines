@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Machine as MachineModel;
+use App\Models\Establishment as EstablishmentModel;
 
 class MachineController extends Controller
 {
@@ -14,7 +16,12 @@ class MachineController extends Controller
     public function index()
     {
         //
-        return view('pages.machine.list.index');
+        $recordsMachine = MachineModel::all();
+
+        $data = [
+            'recordsMachine' => $recordsMachine
+        ];
+        return view('pages.machine.list.index', $data);
     }
 
     /**
@@ -25,12 +32,17 @@ class MachineController extends Controller
     public function create()
     {
         //
+        $recordMachine = new MachineModel();
+        $recordsEstablishment = EstablishmentModel::all();
+        
         $disabled = 'init';
         $data = [
             'record' => [
                 'disabled' => $disabled,
                 'status' => 'creating'
-            ]
+            ],
+            'recordMachine' => $recordMachine,
+            'recordsEstablishment' => $recordsEstablishment
         ];
         return view('pages.machine.form.index', $data);
     }
@@ -55,11 +67,16 @@ class MachineController extends Controller
     public function show($id)
     {
         //
+        $recordMachine = MachineModel::findOrFail($id);
+        $recordsEstablishment = EstablishmentModel::all();
+        
         $data = [
             'record' => [
                 'disabled' => 'disabled',
                 'status' => 'showing'
-            ]
+            ],
+            'recordMachine' => $recordMachine,
+            'recordsEstablishment' => $recordsEstablishment
         ];
         return view('pages.machine.form.index', $data);
     }
@@ -73,11 +90,16 @@ class MachineController extends Controller
     public function edit($id)
     {
         //
+        $recordMachine = MachineModel::findOrFail($id);
+        $recordsEstablishment = EstablishmentModel::all();
+        
         $data = [
             'record' => [
                 'disabled' => null,
                 'status' => 'editing'
-            ]
+            ],
+            'recordMachine' => $recordMachine,
+            'recordsEstablishment' => $recordsEstablishment
         ];
         return view('pages.machine.form.index', $data);
     }

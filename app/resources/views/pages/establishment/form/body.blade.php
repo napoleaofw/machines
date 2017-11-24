@@ -31,12 +31,14 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Dados do estabelecimento</h3>
                     <div class="pull-right">
-                    @if($record['status'] == 'showing')
-                        <a href="{{ route('establishments.edit', 1) }}" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
-                    @else
+                @if($record['status'] == 'showing')
+                        <a href="{{ route('establishments.edit', $recordEstablishment->id) }}" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
+                @else
+                    @if($record['status'] == 'editing')
                         <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
                     @endif
+                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
+                @endif
                     </div>
                 </div>
                 <div class="box-body">
@@ -45,33 +47,31 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Razão social</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->corporate_name }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Nome fantasia</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->trade_name }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Responsável</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->responsible }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Endereço</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->address }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>E-mail</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->email }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Fiscal</label>
                                     <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
-                                        <option value="active">Fiscal 1</option>
-                                        <option value="active">Fiscal 2</option>
-                                        <option value="active">Fiscal 3</option>
-                                        <option value="active">Fiscal 4</option>
-                                        <option value="active">Fiscal 5</option>
+                                    @foreach($recordsUser as $recordUser)
+                                        <option value="{{ $recordUser->id }}" {{ isset($recordEstablishment->fiscal) && $recordEstablishment->fiscal->id == $recordUser->id ? 'selected': null }}>{{ $recordUser->name }}</option>
+                                    @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -80,25 +80,25 @@
                                     <label>Situação</label>
                                     <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
-                                        <option value="active">Ativo</option>
-                                        <option value="inactive">Inativo</option>
+                                        <option value="active" {{ $recordEstablishment->status == 'active' ? 'selected': null }}>Ativo</option>
+                                        <option value="inactive" {{ $recordEstablishment->status == 'inactive' ? 'selected': null }}>Inativo</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone 1</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->phone1 }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone 2</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->phone2 }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone 3</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->phone3 }}" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Percentual de comissão</label>
-                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
+                                    <input type="text" class="form-control" value="{{ $recordEstablishment->commission_percentage }}" {{ $record['disabled'] }}>
                                 </div>
                             </div>
                         </div>
@@ -128,13 +128,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                    @if(count($recordEstablishment->machines) > 0)
+                        @foreach($recordEstablishment->machines as $recordMachine)
                             <tr>
-                                <td>0001</td>
-                                <td>Máquina 1</td>
-                                <td>Descrição da máquina 1...</td>
-                                <td>R$ 1655,98</td>
-                                <td>Observação da máquina 1...</td>
-                                <td>Ativo</td>
+                                <td>{{ $recordMachine->code }}</td>
+                                <td>{{ $recordMachine->name }}</td>
+                                <td>{{ $recordMachine->description }}</td>
+                                <td>R$ {{ $recordMachine->credit_value }}</td>
+                                <td>{{ $recordMachine->observation }}</td>
+                                <td>{{ $recordMachine->status == 'active' ? 'Ativo' : 'Inativo' }}</td>
                                 <td>
                                 @if($record['status'] == 'showing')
                                     <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
@@ -147,139 +149,8 @@
                                 @endif
                                 </td>
                             </tr>
-                            <tr>
-                                <td>0002</td>
-                                <td>Máquina 2</td>
-                                <td>Descrição da máquina 2...</td>
-                                <td>R$ 849,32</td>
-                                <td>Observação da máquina 2...</td>
-                                <td>Inativo</td>
-                                <td>
-                                @if($record['status'] == 'showing')
-                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
-                                        <i class="fa fa-retweet"></i>
-                                    </a>
-                                @else
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                @endif
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0003</td>
-                                <td>Máquina 3</td>
-                                <td>Descrição da máquina 3...</td>
-                                <td>R$ 684,88</td>
-                                <td>Observação da máquina 3...</td>
-                                <td>Ativo</td>
-                                <td>
-                                @if($record['status'] == 'showing')
-                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
-                                        <i class="fa fa-retweet"></i>
-                                    </a>
-                                @else
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                @endif
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0004</td>
-                                <td>Máquina 4</td>
-                                <td>Descrição da máquina 4...</td>
-                                <td>R$ 2988,45</td>
-                                <td>Observação da máquina 4...</td>
-                                <td>Inativo</td>
-                                <td>
-                                @if($record['status'] == 'showing')
-                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
-                                        <i class="fa fa-retweet"></i>
-                                    </a>
-                                @else
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                @endif
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0005</td>
-                                <td>Máquina 5</td>
-                                <td>Descrição da máquina 5...</td>
-                                <td>R$ 982,65</td>
-                                <td>Observação da máquina 5...</td>
-                                <td>Ativo</td>
-                                <td>
-                                @if($record['status'] == 'showing')
-                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
-                                        <i class="fa fa-retweet"></i>
-                                    </a>
-                                @else
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                @endif
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0006</td>
-                                <td>Máquina 6</td>
-                                <td>Descrição da máquina 6...</td>
-                                <td>R$ 184,62</td>
-                                <td>Observação da máquina 6...</td>
-                                <td>Inativo</td>
-                                <td>
-                                @if($record['status'] == 'showing')
-                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
-                                        <i class="fa fa-retweet"></i>
-                                    </a>
-                                @else
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                @endif
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0007</td>
-                                <td>Máquina 7</td>
-                                <td>Descrição da máquina 7...</td>
-                                <td>R$ 98,52</td>
-                                <td>Observação da máquina 7...</td>
-                                <td>Ativo</td>
-                                <td>
-                                @if($record['status'] == 'showing')
-                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
-                                        <i class="fa fa-retweet"></i>
-                                    </a>
-                                @else
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                @endif
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0008</td>
-                                <td>Máquina 8</td>
-                                <td>Descrição da máquina 8...</td>
-                                <td>R$ 287,64</td>
-                                <td>Observação da máquina 8...</td>
-                                <td>Inativo</td>
-                                <td>
-                                @if($record['status'] == 'showing')
-                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
-                                        <i class="fa fa-retweet"></i>
-                                    </a>
-                                @else
-                                    <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                @endif
-                                </td>
-                            </tr>
+                        @endforeach
+                    @endif
                         </tbody>
                         <tfoot>
                             <tr>

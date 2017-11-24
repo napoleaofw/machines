@@ -176,8 +176,8 @@
                             </div>
                         </div>
                         <div class="box-footer clearfix">
-                            <a href="/transaction/register" class="btn btn-sm btn-primary btn-flat pull-left"><i class="fa fa-plus"></i> Nova transação</a>
-                            <a href="/transaction/list" class="btn btn-sm btn-default btn-flat pull-right">Ver todas transações</a>
+                            <a href="{{ route('transactions.create') }}" class="btn btn-sm btn-primary btn-flat pull-left"><i class="fa fa-plus"></i> Nova transação</a>
+                            <a href="{{ route('transactions.index') }}" class="btn btn-sm btn-default btn-flat pull-right">Ver todas transações</a>
                         </div>
                     </div>
                 </div>
