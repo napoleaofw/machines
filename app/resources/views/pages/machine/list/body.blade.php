@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <div class="pull-right">
-                        <a href="/machine/register" class="btn btn-primary"><i class="fa fa-plus"></i> Nova máquina</a>
+                        <a href="{{ route('machines.create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Nova máquina</a>
                     </div>
                 </div>
                 <div class="box-body table-responsive">
@@ -37,8 +37,8 @@
                                 <td>Observação da máquina 1...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -53,8 +53,8 @@
                                 <td>Observação da máquina 2...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -69,8 +69,8 @@
                                 <td>Observação da máquina 3...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -85,8 +85,8 @@
                                 <td>Observação da máquina 4...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -101,8 +101,8 @@
                                 <td>Observação da máquina 5...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -117,8 +117,8 @@
                                 <td>Observação da máquina 6...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -133,8 +133,8 @@
                                 <td>Observação da máquina 7...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -149,8 +149,8 @@
                                 <td>Observação da máquina 8...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/machine/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('machines.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>

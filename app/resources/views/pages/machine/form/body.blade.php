@@ -12,6 +12,14 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <h3 class="box-title">Dados da máquina</h3>
+                    <div class="pull-right">
+                    @if($record['status'] == 'showing')
+                        <a href="{{ route('machines.edit', 1) }}" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
+                    @else
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
+                    @endif
+                    </div>
                 </div>
                 <div class="box-body">
                     <form role="form">
@@ -19,7 +27,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Estabelecimento</label>
-                                    <select class="form-control">
+                                    <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
                                         <option value="estabelecimento1">Estabelecimento 1</option>
                                         <option value="estabelecimento2">Estabelecimento 2</option>
@@ -30,11 +38,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Situação</label>
-                                    <select class="form-control">
+                                    <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
                                         <option value="active">Ativo</option>
                                         <option value="inactive">Inativo</option>
@@ -42,32 +50,25 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Descrição</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control" {{ $record['disabled'] }}></textarea>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Código</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Valor do crédito</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Observação</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control" {{ $record['disabled'] }}></textarea>
                                 </div>
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="box-footer">
-                    <a href="/machine/list" class="btn btn-default">Cancelar</a>
-                    <div class="pull-right">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
-                    </div>
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <div class="pull-right">
-                        <a href="/establishment/register" class="btn btn-primary"><i class="fa fa-plus"></i> Novo estabelecimento</a>
+                        <a href="{{ route('establishments.create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Novo estabelecimento</a>
                     </div>
                 </div>
                 <div class="box-body table-responsive">
@@ -37,8 +37,8 @@
                                 <td>3</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -53,8 +53,8 @@
                                 <td>5</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -69,8 +69,8 @@
                                 <td>2</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -85,8 +85,8 @@
                                 <td>3</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -101,8 +101,8 @@
                                 <td>5</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -117,8 +117,8 @@
                                 <td>4</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -133,8 +133,8 @@
                                 <td>3</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -149,8 +149,8 @@
                                 <td>4</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/establishment/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('establishments.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>

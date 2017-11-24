@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <!-- <div class="pull-right">
-                        <a href="/transaction/register" class="btn btn-primary"><i class="fa fa-plus"></i> Nova transação</a>
+                        <a href="{{ route('transactions.create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Nova transação</a>
                     </div> -->
                 </div>
                 <div class="box-body table-responsive">
@@ -43,8 +43,8 @@
                                 <td>R$ 810,00</td>
                                 <td>31/10/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -62,8 +62,8 @@
                                 <td>R$ 192,00</td>
                                 <td>26/10/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -81,8 +81,8 @@
                                 <td>R$ 1290,00</td>
                                 <td>25/10/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -100,8 +100,8 @@
                                 <td>R$ 26,00</td>
                                 <td>16/10/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -119,8 +119,8 @@
                                 <td>R$ 700,00</td>
                                 <td>09/10/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -138,8 +138,8 @@
                                 <td>R$ 1728,00</td>
                                 <td>28/09/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -157,8 +157,8 @@
                                 <td>R$ 136,00</td>
                                 <td>14/09/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -176,8 +176,8 @@
                                 <td>R$ 2584,00</td>
                                 <td>03/09/2017</td>
                                 <td>
-                                    <a href="/transaction/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('transactions.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>

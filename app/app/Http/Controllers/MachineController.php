@@ -25,7 +25,14 @@ class MachineController extends Controller
     public function create()
     {
         //
-        return view('pages.machine.form.index');
+        $disabled = 'init';
+        $data = [
+            'record' => [
+                'disabled' => $disabled,
+                'status' => 'creating'
+            ]
+        ];
+        return view('pages.machine.form.index', $data);
     }
 
     /**
@@ -48,7 +55,13 @@ class MachineController extends Controller
     public function show($id)
     {
         //
-        return view('pages.machine.form.index');
+        $data = [
+            'record' => [
+                'disabled' => 'disabled',
+                'status' => 'showing'
+            ]
+        ];
+        return view('pages.machine.form.index', $data);
     }
 
     /**
@@ -60,7 +73,13 @@ class MachineController extends Controller
     public function edit($id)
     {
         //
-        return view('pages.machine.form.index');
+        $data = [
+            'record' => [
+                'disabled' => null,
+                'status' => 'editing'
+            ]
+        ];
+        return view('pages.machine.form.index', $data);
     }
 
     /**

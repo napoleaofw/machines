@@ -7,56 +7,7 @@
                 <h4 class="modal-title">Dados da transação</h4>
             </div>
             <div class="modal-body">
-                <form role="form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Estabelecimento</label>
-                                <select class="form-control">
-                                    <option value="">Selecione</option>
-                                    <option value="estabelecimento1">Estabelecimento 1</option>
-                                    <option value="estabelecimento2">Estabelecimento 2</option>
-                                    <option value="estabelecimento3">Estabelecimento 3</option>
-                                    <option value="estabelecimento4">Estabelecimento 4</option>
-                                    <option value="estabelecimento5">Estabelecimento 5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Máquina</label>
-                                <select class="form-control">
-                                    <option value="">Selecione</option>
-                                    <option value="maquina1">Máquina 1</option>
-                                    <option value="maquina2">Máquina 2</option>
-                                    <option value="maquina3">Máquina 3</option>
-                                    <option value="maquina4">Máquina 4</option>
-                                    <option value="maquina5">Máquina 5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Observação</label>
-                                <textarea class="form-control"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Tipo</label>
-                                <select class="form-control">
-                                    <option value="">Selecione</option>
-                                    <option value="despesa">Despesa</option>
-                                    <option value="receita">Receita</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Quantidade de créditos</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>Data</label>
-                                <input type="text" class="form-control input-date">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                @include('pages.transaction.form.components.form')
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cancelar</button>
@@ -79,6 +30,14 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <h3 class="box-title">Dados do estabelecimento</h3>
+                    <div class="pull-right">
+                    @if($record['status'] == 'showing')
+                        <a href="{{ route('establishments.edit', 1) }}" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
+                    @else
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
+                    @endif
+                    </div>
                 </div>
                 <div class="box-body">
                     <form role="form">
@@ -86,27 +45,27 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Razão social</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Nome fantasia</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Responsável</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Endereço</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>E-mail</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Fiscal</label>
-                                    <select class="form-control">
+                                    <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
                                         <option value="active">Fiscal 1</option>
                                         <option value="active">Fiscal 2</option>
@@ -119,7 +78,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Situação</label>
-                                    <select class="form-control">
+                                    <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
                                         <option value="active">Ativo</option>
                                         <option value="inactive">Inativo</option>
@@ -127,38 +86,33 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone 1</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone 2</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone 3</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Percentual de comissão</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="box-footer">
-                    <a href="/establishment/list" class="btn btn-default">Cancelar</a>
-                    <div class="pull-right">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
-                    </div>
-                </div>
             </div>
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <h3 class="box-title">Máquinas vinculadas</h3>
+                @if($record['status'] != 'showing')
                     <div class="pull-right">
                         <a href="#" class="btn btn-primary"><i class="fa fa-plus"></i> Novo vínculo</a>
                     </div>
+                @endif
                 </div>
                 <div class="box-body table-responsive">
                     <table id="table-machine" class="table table-bordered table-striped">
@@ -182,12 +136,15 @@
                                 <td>Observação da máquina 1...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                             <tr>
@@ -198,12 +155,15 @@
                                 <td>Observação da máquina 2...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                             <tr>
@@ -214,12 +174,15 @@
                                 <td>Observação da máquina 3...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                             <tr>
@@ -230,12 +193,15 @@
                                 <td>Observação da máquina 4...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                             <tr>
@@ -246,12 +212,15 @@
                                 <td>Observação da máquina 5...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                             <tr>
@@ -262,12 +231,15 @@
                                 <td>Observação da máquina 6...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                             <tr>
@@ -278,12 +250,15 @@
                                 <td>Observação da máquina 7...</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                             <tr>
@@ -294,12 +269,15 @@
                                 <td>Observação da máquina 8...</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
+                                @if($record['status'] == 'showing')
+                                    <a href="#" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Novo lançamento" data-toggle="modal" data-target="#modal-transaction">
                                         <i class="fa fa-retweet"></i>
                                     </a>
+                                @else
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
                                     </a>
+                                @endif
                                 </td>
                             </tr>
                         </tbody>

@@ -25,7 +25,14 @@ class EstablishmentController extends Controller
     public function create()
     {
         //
-        return view('pages.establishment.form.index');
+        $disabled = 'init';
+        $data = [
+            'record' => [
+                'disabled' => $disabled,
+                'status' => 'creating'
+            ]
+        ];
+        return view('pages.establishment.form.index', $data);
     }
 
     /**
@@ -48,7 +55,13 @@ class EstablishmentController extends Controller
     public function show($id)
     {
         //
-        return view('pages.establishment.form.index');
+        $data = [
+            'record' => [
+                'disabled' => 'disabled',
+                'status' => 'showing'
+            ]
+        ];
+        return view('pages.establishment.form.index', $data);
     }
 
     /**
@@ -60,7 +73,13 @@ class EstablishmentController extends Controller
     public function edit($id)
     {
         //
-        return view('pages.establishment.form.index');
+        $data = [
+            'record' => [
+                'disabled' => null,
+                'status' => 'editing'
+            ]
+        ];
+        return view('pages.establishment.form.index', $data);
     }
 
     /**

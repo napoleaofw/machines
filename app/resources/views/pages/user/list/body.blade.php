@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <div class="pull-right">
-                        <a href="/user/register" class="btn btn-primary"><i class="fa fa-plus"></i> Novo usuário</a>
+                        <a href="{{ route('users.create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Novo usuário</a>
                     </div>
                 </div>
                 <div class="box-body table-responsive">
@@ -35,8 +35,8 @@
                                 <td>usuario1@hotmail.com</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -50,8 +50,8 @@
                                 <td>usuario2@hotmail.com</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -65,8 +65,8 @@
                                 <td>usuario3@hotmail.com</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -80,8 +80,8 @@
                                 <td>usuario4@hotmail.com</td>
                                 <td>Inativo</td>
                                 <td>
-                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>
@@ -95,8 +95,8 @@
                                 <td>usuario5@hotmail.com</td>
                                 <td>Ativo</td>
                                 <td>
-                                    <a href="/user/register" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Editar">
-                                        <i class="fa fa-edit"></i>
+                                    <a href="{{ route('users.show', 1) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">
+                                        <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#" class="btn btn-danger btn-xs" data-tooltip="tooltip" data-original-title="Excluir">
                                         <i class="fa fa-trash"></i>

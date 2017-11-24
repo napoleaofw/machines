@@ -13,7 +13,12 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Dados do usuário</h3>
                     <div class="pull-right">
-                        <a href="#" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
+                    @if($record['status'] == 'showing')
+                        <a href="{{ route('users.edit', 1) }}" class="btn btn-info"><i class="fa fa-unlock-alt"></i> Editar</a>
+                    @else
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
+                    @endif
                     </div>
                 </div>
                 <div class="box-body">
@@ -22,15 +27,15 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nome de usuário</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Tipo</label>
-                                    <select class="form-control">
+                                    <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
                                         <option value="fiscal">Fiscal</option>
                                         <option value="gerente">Gerente</option>
@@ -40,15 +45,15 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>E-mail</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" {{ $record['disabled'] }}>
                                 </div>
                                 <div class="form-group">
                                     <label>Situação</label>
-                                    <select class="form-control">
+                                    <select class="form-control" {{ $record['disabled'] }}>
                                         <option value="">Selecione</option>
                                         <option value="active">Ativo</option>
                                         <option value="inactive">Inativo</option>
@@ -57,13 +62,6 @@
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="box-footer">
-                    <a href="/user/list" class="btn btn-default">Cancelar</a>
-                    <div class="pull-right">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
-                    </div>
                 </div>
             </div>
         </section>

@@ -3,28 +3,28 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MENU PRINCIPAL</li>
             <li>
-                <a href="/dashboard">
+                <a href=" {{ route('dashboard') }} ">
                     <i class="fa fa-line-chart"></i> <span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a href="/establishment/list">
+                <a href="{{ route('establishments.index') }}">
                     <i class="fa fa-bank"></i>
                     <span>Estabelecimentos</span>
                 </a>
             </li>
             <li>
-                <a href="/machine/list">
+                <a href="{{ route('machines.index') }}">
                     <i class="fa fa-gamepad"></i> <span>Máquinas</span>
                 </a>
             </li>
             <li>
-                <a href="/transaction/list">
+                <a href="{{ route('transactions.index') }}">
                     <i class="fa fa-list"></i> <span>Transações</span>
                 </a>
             </li>
             <li>
-                <a href="/user/list">
+                <a href="{{ route('users.index') }}">
                     <i class="fa fa-user"></i> <span>Usuários</span>
                 </a>
             </li>
