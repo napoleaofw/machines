@@ -30,4 +30,6 @@ $(document).ready(function() {
         },
         responsive: true
     });
+    
+    $('#modal-machine select').select2();
 });

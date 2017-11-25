@@ -37,12 +37,12 @@
                 </a>
                 <ul class="treeview-menu">
                     <li>
-                        <a href="/reports/establishment">
+                        <a href="{{ route('reports.establishment') }}">
                             <i class="fa fa-sticky-note-o"></i> <span>Resumido por estabelecimento</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/reports/fiscal">
+                        <a href="{{ route('reports.fiscal') }}">
                             <i class="fa fa-sticky-note-o"></i> <span>Resumido por fiscal</span>
                         </a>
                     </li>

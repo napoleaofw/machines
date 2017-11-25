@@ -15,6 +15,11 @@
 
 Route::get('login', 'LoginController@index')->name('login');
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+Route::prefix('reports')->group(function() {
+    Route::get('invoice', 'ReportController@invoice')->name('reports.invoice');
+    Route::get('establishment', 'ReportController@establishment')->name('reports.establishment');
+    Route::get('fiscal', 'ReportController@fiscal')->name('reports.fiscal');
+});
 Route::resource('users', 'UserController');
 Route::resource('establishments', 'EstablishmentController');
 Route::resource('machines', 'MachineController');

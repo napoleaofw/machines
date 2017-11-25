@@ -1,21 +1,53 @@
-<div class="modal fade" id="modal-transaction">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Dados da transação</h4>
-            </div>
-            <div class="modal-body">
-                @include('pages.transaction.form.components.form')
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cancelar</button>
-                <a href="#" class="btn btn-warning"><i class="fa fa-retweet"></i> Lançar</a>
+@if($record['status'] == 'showing')
+    <div class="modal fade" id="modal-transaction">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Dados da transação</h4>
+                </div>
+                <div class="modal-body">
+                    @include('pages.transaction.form.components.form')
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cancelar</button>
+                    <a href="#" class="btn btn-warning"><i class="fa fa-retweet"></i> Lançar</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+@else
+    <div class="modal fade" id="modal-machine">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Vincular máquina</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Máquina(s)</label>
+                                <select class="form-control select2" multiple="multiple" data-placeholder="Selecione" style="width: 100%;">
+                                @foreach($recordsMachine as $recordMachine)
+                                    <option value="{{ $recordMachine->id }}">{{ $recordMachine->name }}</option>
+                                @endforeach
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cancelar</button>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-plus"></i> Vincular</a>
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
 <div class="wrapper">
     @include('components.header.content')
     @include('components.sidebar.content')
@@ -110,7 +142,7 @@
                     <h3 class="box-title">Máquinas vinculadas</h3>
                 @if($record['status'] != 'showing')
                     <div class="pull-right">
-                        <a href="#" class="btn btn-primary"><i class="fa fa-plus"></i> Novo vínculo</a>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modal-machine"><i class="fa fa-plus"></i> Novo vínculo</button>
                     </div>
                 @endif
                 </div>

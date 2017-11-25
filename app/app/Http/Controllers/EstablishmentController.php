@@ -35,6 +35,7 @@ class EstablishmentController extends Controller
     {
         //
         $recordEstablishment = new EstablishmentModel();
+        $recordsMachine = MachineModel::all();
         $recordsUser = UserModel::where('type', 'fiscal')->get();
 
         $disabled = 'init';
@@ -44,6 +45,7 @@ class EstablishmentController extends Controller
                 'status' => 'creating'
             ],
             'recordEstablishment' => $recordEstablishment,
+            'recordsMachine' => $recordsMachine,
             'recordsUser' => $recordsUser
         ];
         return view('pages.establishment.form.index', $data);
@@ -99,6 +101,7 @@ class EstablishmentController extends Controller
     {
         //
         $recordEstablishment = EstablishmentModel::findOrFail($id);
+        $recordsMachine = MachineModel::all();
         $recordsUser = UserModel::where('type', 'fiscal')->get();
         
         $data = [
@@ -107,6 +110,7 @@ class EstablishmentController extends Controller
                 'status' => 'editing'
             ],
             'recordEstablishment' => $recordEstablishment,
+            'recordsMachine' => $recordsMachine,
             'recordsUser' => $recordsUser
         ];
         return view('pages.establishment.form.index', $data);
