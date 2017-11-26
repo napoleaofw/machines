@@ -31,7 +31,9 @@ class ReportController extends Controller
      */
     public function establishment()
     {
-        $recordsEstablishment = EstablishmentModel::all();
+        // $recordsEstablishment = EstablishmentModel::all();
+        $recordsDateTransaction = TransactionModel::select('date')->groupBy('date')->orderBy('date')->get();
+        dd($recordsDateTransaction);
 
         $data = [
             'recordsEstablishment' => $recordsEstablishment

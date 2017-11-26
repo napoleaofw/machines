@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-xs-12 table-responsive">
                     <table class="table table-striped">
-                        <thead>
+                        <!-- <thead>
                             <tr>
                                 <th>Data</th>
                                 <th>Másquina</th>
@@ -27,24 +27,11 @@
                                 <th>Saldo</th>
                                 <th>Comissão</th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody>
-                @foreach($recordsEstablishment as $recordEstablishment)
-                    @if($recordEstablishment->transactions)
-                        @foreach($recordEstablishment->transactions as $recordTransaction)
                             <tr>
-                                <td>{{ }}</td>
-                                <td>{{ }}</td>
-                                <td>{{ }}</td>
-                                <td>{{ }}</td>
-                                <td>{{ }}</td>
-                                <td>{{ }}</td>
-                                <td>{{ }}</td>
-                                <td>{{ }}</td>
+                                <td></td>
                             </tr>
-                        @endforeach
-                    @endif
-                @endforeach
                         </tbody>
                     </table>
                 </div>
