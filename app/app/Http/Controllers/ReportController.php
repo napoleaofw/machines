@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use App\Models\Establishment as EstablishmentModel;
 use App\Models\Transaction as TransactionModel;
 use App\Models\User as UserModel;
@@ -31,12 +32,33 @@ class ReportController extends Controller
      */
     public function establishment()
     {
-        // $recordsEstablishment = EstablishmentModel::all();
-        $recordsDateTransaction = TransactionModel::select('date')->groupBy('date')->orderBy('date')->get();
-        dd($recordsDateTransaction);
+        // $recordsTransaction = TransactionModel::all();
+        $recordsTransaction = TransactionModel::whereDay('date', '03')
+        ->whereMonth('date', '05')
+        ->whereYear('date', '2017')
+        ->orderBy('date')
+        ->get();
+        
+        $recordsTransaction = $recordsTransaction->sortBy('date')->groupBy(function($recordTransaction) {
+            return Carbon::parse($recordTransaction->date)->format('d/m/Y');
+        })->transform(function($records) {
+            return $records->groupBy(function($recordTransaction) {
+                return $recordTransaction->establishment->trade_name;
+            });
+        });
+
+        // $recordsTransaction = $recordsTransaction->each(function($recordTransaction) {
+        //     return $recordTransaction->each(function($recordEstablishment) {
+        //         return $recordEstablishment->each(function($recordTransaction) {
+        //             dd($recordTransaction);
+        //         });
+        //     });
+        // });
+
+        // dd($recordsTransaction);
 
         $data = [
-            'recordsEstablishment' => $recordsEstablishment
+            'recordsReport' => $recordsTransaction
         ];
         return view('reports.establishment.index', $data);
     }
