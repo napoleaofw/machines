@@ -25,7 +25,6 @@
                                 <th>Tipo</th>
                                 <th>Quantidade de créditos</th>
                                 <th>Valor do crédito</th>
-                                <th>Valor da comissão</th>
                                 <th>Valor total</th>
                                 <th>Data</th>
                                 <th></th>
@@ -40,7 +39,6 @@
                                 <td><span class="label {{ $recordTransaction->type == 'revenue' ? 'label-success' : 'label-danger' }}">{{ $recordTransaction->type == 'revenue' ? 'Receita' : 'Despesa' }}</span></td>
                                 <td>{{ $recordTransaction->credit_quantity }}</td>
                                 <td>R$ {{ $recordTransaction->credit_value }}</td>
-                                <td>R$ {{ $recordTransaction->commission_value }}</td>
                                 <td>R$ {{ $recordTransaction->total_amount }}</td>
                                 <td>{{ $recordTransaction->date }}</td>
                                 <td>
@@ -62,7 +60,6 @@
                                 <th>Tipo</th>
                                 <th>Quantidade de créditos</th>
                                 <th>Valor do crédito</th>
-                                <th>Valor da comissão</th>
                                 <th>Valor total</th>
                                 <th>Data</th>
                                 <th></th>

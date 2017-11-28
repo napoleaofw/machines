@@ -32,12 +32,12 @@ class ReportController extends Controller
      */
     public function establishment()
     {
-        // $recordsTransaction = TransactionModel::all();
-        $recordsReport = TransactionModel::whereDay('date', '25')
+        $recordsReport = TransactionModel::all();
+        // $recordsReport = TransactionModel::whereDay('date', '25')
         // ->whereMonth('date', '10')
         // ->whereYear('date', '2017')
         // ->orderBy('date')
-        ->get();
+        // ->get();
         
         $recordsReport = $recordsReport->sortBy('date')->groupBy(function($recordTransaction) {
             return Carbon::parse($recordTransaction->date)->format('d/m/Y');
@@ -47,35 +47,32 @@ class ReportController extends Controller
             });
         });
 
-        $recordsReport = $recordsReport->each(function($recordsEstablishment) {
-            $recordsEstablishment->each(function($recordsTransaction) {
-                $recordsTransaction->prepend($recordsTransaction->sum(function($recordTransaction) {
-                    return $recordTransaction->establishment_commission_amount;
-                }), 'establishment_commission_amount');
-                $recordsTransaction->prepend($recordsTransaction->sum(function($recordTransaction) {
-                    return is_object($recordTransaction) ? $recordTransaction->credit_amount : 0;
-                }), 'establishment_credit_amount');
-            });
-            $recordsEstablishment->prepend($recordsEstablishment->sum(function($recordsTransaction) {
-                return $recordsTransaction['establishment_commission_amount'];
-            }), 'date_commission_amount');
-            $recordsEstablishment->prepend($recordsEstablishment->sum(function($recordsTransaction) {
-                return $recordsTransaction['establishment_credit_amount'];
-            }), 'date_credit_amount');
+        // $recordsReport = $recordsReport->each(function($recordsEstablishment) {
+        //     $recordsEstablishment->each(function($recordsTransaction) {
+        //         $recordsTransaction->put($recordsTransaction->sum(function($recordTransaction) {
+        //             return $recordTransaction->establishment_commission_amount;
+        //         }), 'establishment_commission_amount');
 
-            // structure
+        //         $recordsTransaction->put($recordsTransaction->sum(function($recordTransaction) {
+        //             return is_object($recordTransaction) ? $recordTransaction->credit_amount : 0;
+        //         }), 'establishment_credit_amount');
+        //     });
 
-            // $recordsEstablishment->each(function($recordsTransaction) {
-                
-            //     $recordsTransaction->each(function($recordTransaction) {
-                    
+        //     $recordsEstablishment->put($recordsEstablishment->sum(function($recordsTransaction) {
+        //         return $recordsTransaction['establishment_commission_amount'];
+        //     }), 'date_commission_amount');
 
+        //     $recordsEstablishment->put($recordsEstablishment->sum(function($recordsTransaction) {
+        //         return $recordsTransaction['establishment_credit_amount'];
+        //     }), 'date_credit_amount');
+        // });
 
-            //     });
-
-            // });
-
-        });
+        // $recordsReport = $recordsReport->put($recordsReport->sum(function($recordsEstablishment) {
+        //     return $recordsEstablishment['date_commission_amount'];
+        // }), 'commission_amount');
+        // $recordsReport = $recordsReport->put($recordsReport->sum(function($recordsEstablishment) {
+        //     return $recordsEstablishment['date_credit_amount'];
+        // }), 'credit_amount');
 
         // dd($recordsReport);
 
@@ -92,10 +89,23 @@ class ReportController extends Controller
      */
     public function fiscal()
     {
-        $recordsUser = UserModel::all();
+        $recordsReport = TransactionModel::all();
+        // $recordsReport = TransactionModel::whereDay('date', '25')
+        // ->whereMonth('date', '10')
+        // ->whereYear('date', '2017')
+        // ->orderBy('date')
+        // ->get();
+        
+        $recordsReport = $recordsReport->sortBy('date')->groupBy(function($recordTransaction) {
+            return Carbon::parse($recordTransaction->date)->format('d/m/Y');
+        })->transform(function($records) {
+            return $records->groupBy(function($recordTransaction) {
+                return $recordTransaction->createdBy->name;
+            });
+        });
 
         $data = [
-            'recordsUser' => $recordsUser
+            'recordsReport' => $recordsReport
         ];
         return view('reports.fiscal.index', $data);
     }

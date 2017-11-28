@@ -43,6 +43,10 @@
                                         <option value="administrator" {{ $recordUser->type == 'administrator' ? 'selected' : null }}>Gerente</option>
                                     </select>
                                 </div>
+                                <div class="form-group">
+                                    <label>Percentual de comissão</label>
+                                    <input type="text" class="form-control" value="{{ $recordUser->commission_percentage }}" {{ $record['disabled'] }}>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">

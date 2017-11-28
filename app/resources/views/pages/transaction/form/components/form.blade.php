@@ -24,12 +24,16 @@
                 <input type="text" class="form-control" value="{{ $recordTransaction->credit_quantity }}" {{ $record['disabled'] }}>
             </div>
             <div class="form-group">
-                <label>Percentual de comissão</label>
-                <input type="text" class="form-control" value="{{ $recordTransaction->commission_percentage }}" disabled>
-            </div>
-            <div class="form-group">
                 <label>Valor total dos créditos</label>
                 <input type="text" class="form-control" value="{{ $recordTransaction->credit_amount }}" disabled>
+            </div>
+            <div class="form-group">
+                <label>Percentual de comissão do estabelecimento</label>
+                <input type="text" class="form-control" value="{{ $recordTransaction->establishment_commission_percentage }}" disabled>
+            </div>
+            <div class="form-group">
+                <label>Percentual de comissão do fiscal</label>
+                <input type="text" class="form-control" value="{{ $recordTransaction->fiscal_commission_percentage }}" disabled>
             </div>
             <div class="form-group">
                 <label>Observação</label>
@@ -54,12 +58,16 @@
                 <input type="text" class="form-control" value="{{ $recordTransaction->credit_value }}" disabled>
             </div>
             <div class="form-group">
-                <label>Valor da comissão</label>
-                <input type="text" class="form-control" value="{{ $recordTransaction->commission_value }}" disabled>
-            </div>
-            <div class="form-group">
                 <label>Valor total</label>
                 <input type="text" class="form-control" value="{{ $recordTransaction->total_amount }}" disabled>
+            </div>
+            <div class="form-group">
+                <label>Valor da comissão do estabelecimento</label>
+                <input type="text" class="form-control" value="{{ $recordTransaction->establishment_commission_amount }}" disabled>
+            </div>
+            <div class="form-group">
+                <label>Valor da comissão do fiscal</label>
+                <input type="text" class="form-control" value="{{ $recordTransaction->fiscal_commission_amount }}" disabled>
             </div>
         @if($record['status'] != 'creating' && $recordTransaction->id)
             <div class="form-group">

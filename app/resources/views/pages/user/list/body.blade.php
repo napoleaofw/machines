@@ -23,6 +23,7 @@
                                 <th>Tipo</th>
                                 <th>Nome</th>
                                 <th>E-mail</th>
+                                <th>Percentual de comissão</th>
                                 <th>Situação</th>
                                 <th></th>
                             </tr>
@@ -34,6 +35,7 @@
                                 <td>{{ $recordUser->type == 'administrator' ? 'Gerente' : 'Fiscal' }}</td>
                                 <td>{{ $recordUser->name }}</td>
                                 <td>{{ $recordUser->email }}</td>
+                                <td>{{ $recordUser->commission_percentage }}</td>
                                 <td>{{ $recordUser->status == 'active' ? 'Ativo' : 'Inativo' }}</td>
                                 <td>
                                     <a href="{{ route('users.show', $recordUser->id) }}" class="btn btn-info btn-xs" data-tooltip="tooltip" data-original-title="Visualizar">

@@ -34,40 +34,40 @@
                                 </thead>
                                 <tbody>
                                 @foreach($recordsReport as $date => $recordsEstablishment)
-                                <tr>
-                                    <th colspan="6">Data: {{ $date ?: 'em aberto' }}</th>
-                                </tr>
+                                    <tr>
+                                        <th colspan="6">Data: {{ $date ?: 'em aberto' }}</th>
+                                    </tr>
                                     @foreach($recordsEstablishment as $establishment => $recordsTransaction)
-                                        <tr>
-                                            <th colspan="6">Estabelecimento: {{ $establishment }}</th>
-                                        </tr>
+                                    <tr>
+                                        <th colspan="6">Estabelecimento: {{ $establishment }}</th>
+                                    </tr>
                                         @foreach($recordsTransaction as $recordTransaction)
-                                            <tr>
-                                                <td>{{ $recordTransaction->createdBy->name }}</td>
-                                                <td>{{ $recordTransaction->machine->code . ' - ' . $recordTransaction->machine->name }}</td>
-                                                <td class="text-right">R$ {{ $recordTransaction->credit_value }}</td>
-                                                <td>{{ $recordTransaction->type == 'receive' ? 'Receita' : 'Despesa' }}</td>
-                                                <td class="text-right">R$ {{ $recordTransaction->commission_value }}</td>
-                                                <td class="text-right">R$ {{ $recordTransaction->credit_amount }}</td>
-                                            </tr>
+                                    <tr>
+                                        <td>{{ $recordTransaction->createdBy->name }}</td>
+                                        <td>{{ $recordTransaction->machine->code . ' - ' . $recordTransaction->machine->name }}</td>
+                                        <td class="text-right">R$ {{ number_format($recordTransaction->credit_value, 4, ',', '.') }}</td>
+                                        <td>{{ $recordTransaction->type == 'receive' ? 'Receita' : 'Despesa' }}</td>
+                                        <td class="text-right">R$ {{ number_format($recordTransaction->establishment_commission_amount, 2, ',', '.') }}</td>
+                                        <td class="text-right">R$ {{ number_format($recordTransaction->credit_amount, 2, ',', '.') }}</td>
+                                    </tr>
                                         @endforeach
-                                        <tr>
-                                            <th class="text-right" colspan="4">Total estabelecimento {{ $establishment }}:</th>
-                                            <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                            <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                        </tr>
+                                    <tr>
+                                        <th class="text-right" colspan="4">Total estabelecimento {{ $establishment }}:</th>
+                                        <th class="text-right">R$ {{ 'XXX,XX' }}</th>
+                                        <th class="text-right">R$ {{ 'XXX,XX' }}</th>
+                                    </tr>
                                     @endforeach
                                     <tr>
                                         <th class="text-right" colspan="4">Total data {{ $date }}:</th>
-                                        <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                        <th class="text-right">R$ {{ 'XXXXX' }}</th>
+                                        <th class="text-right">R$ {{ 'XXX,XX' }}</th>
+                                        <th class="text-right">R$ {{ 'XXX,XX' }}</th>
                                     </tr>
                                 @endforeach
-                                <tr>
-                                    <th class="text-right" colspan="4">Total:</th>
-                                    <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                    <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                </tr>
+                                    <tr>
+                                        <th class="text-right" colspan="4">Total:</th>
+                                        <th class="text-right">R$ {{ 'XXX,XX' }}</th>
+                                        <th class="text-right">R$ {{ 'XXX,XX' }}</th>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
