@@ -52,25 +52,19 @@
                                             </tr>
                                         @endforeach
                                         <tr>
-                                            <th class="text-right" colspan="2">Total estabelecimento {{ $establishment }}:</th>
-                                            <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                            <th></th>
+                                            <th class="text-right" colspan="4">Total estabelecimento {{ $establishment }}:</th>
                                             <th class="text-right">R$ {{ 'XXXXX' }}</th>
                                             <th class="text-right">R$ {{ 'XXXXX' }}</th>
                                         </tr>
                                     @endforeach
                                     <tr>
-                                        <th class="text-right" colspan="2">Total data {{ $date }}:</th>
-                                        <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                        <th></th>
+                                        <th class="text-right" colspan="4">Total data {{ $date }}:</th>
                                         <th class="text-right">R$ {{ 'XXXXX' }}</th>
                                         <th class="text-right">R$ {{ 'XXXXX' }}</th>
                                     </tr>
                                 @endforeach
                                 <tr>
-                                    <th class="text-right" colspan="2">Total:</th>
-                                    <th class="text-right">R$ {{ 'XXXXX' }}</th>
-                                    <th></th>
+                                    <th class="text-right" colspan="4">Total:</th>
                                     <th class="text-right">R$ {{ 'XXXXX' }}</th>
                                     <th class="text-right">R$ {{ 'XXXXX' }}</th>
                                 </tr>

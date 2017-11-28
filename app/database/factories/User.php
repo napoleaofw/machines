@@ -11,6 +11,7 @@ $factory->define(User::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'type' => $faker->randomElement(['administrator', 'fiscal']),
+        'commission_percentage' => $faker->randomFloat(2, 0, 100),
         'status' => $faker->randomElement(['active', 'inactive'])
     ];
 });
